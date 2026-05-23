@@ -1,0 +1,407 @@
+---
+import Base from '../layouts/Base.astro';
+
+const metaDescription = "SEO Swansea delivers local search marketing that puts South Wales businesses in front of customers. Free audit, transparent pricing, proven results.";
+
+const faqItems = [
+  {
+    q: "How long does SEO take to work for Swansea businesses?",
+    a: "Most Swansea businesses see measurable ranking improvements within three to six months. Local SEO often delivers faster results because competition in the SA postcode areas is lower than in Cardiff or London. We track progress weekly through Google Search Console and share a monthly report so you can see exactly where your investment is going."
+  },
+  {
+    q: "How much does SEO cost in Swansea?",
+    a: "Our SEO packages start from £350 per month for ongoing local SEO management. One-off technical audits are available from £250. Every engagement begins with a free SEO audit so we can scope the work accurately. Visit our pricing page at /seo-pricing-swansea/ for full details."
+  },
+  {
+    q: "Do I need SEO if my Swansea business relies on word of mouth?",
+    a: "Word of mouth is valuable, but eight out of ten consumers now search online before visiting a local business. If someone hears about your Swansea shop or service and then searches your name, a weak online presence can lose the sale. SEO protects and amplifies word-of-mouth referrals by making sure your website appears prominently when people search."
+  },
+  {
+    q: "What is local SEO and why does it matter in Swansea?",
+    a: "Local SEO is the practice of optimising your website and Google Business Profile so you appear in location-specific searches. When someone in Mumbles searches for a plumber, or a tourist near the Gower Peninsula looks for a restaurant, local SEO determines which businesses appear in the map pack and organic results. For Swansea businesses competing against national chains, local SEO is the most cost-effective way to win nearby customers."
+  },
+  {
+    q: "Can you help with Google Business Profile optimisation?",
+    a: "Yes. Google Business Profile management is included in all our SEO packages. We optimise your listing with accurate categories, service descriptions, photos, and a review generation strategy. For businesses near landmarks like Liberty Stadium or the National Waterfront Museum, we also leverage proximity signals to improve map pack visibility."
+  },
+  {
+    q: "What is the difference between SEO and paid ads for Swansea businesses?",
+    a: "Paid ads deliver immediate visibility but stop the moment you pause spending. SEO builds lasting organic rankings that continue generating traffic and leads month after month. For most Swansea SMEs, a combined approach works best: paid ads for short-term campaigns and SEO for sustainable growth. We focus on SEO because it delivers the strongest long-term return on investment."
+  },
+  {
+    q: "Will AI search tools like ChatGPT affect my Swansea business?",
+    a: "AI-powered search is already changing how consumers find local services. Tools like ChatGPT, Google AI Overviews, and Microsoft Copilot pull answers from well-structured websites. Businesses that optimise for AI extraction today will capture traffic that competitors miss. Our AI search optimisation service prepares your Swansea business for this shift. Learn more at /ai-search-optimisation-swansea/."
+  },
+  {
+    q: "Do you work with businesses outside Swansea?",
+    a: "We primarily serve businesses across Swansea, Neath Port Talbot, Llanelli, and the wider South Wales region. If your business targets customers in these areas, we can help regardless of where you are physically based. Visit /areas/ for the full list of locations we cover."
+  }
+];
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SEO Swansea",
+    "url": "https://seoswansea.uk",
+    "email": "2012.infinite@gmail.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Sunny Patel",
+      "url": "https://sunnypatel.co.uk"
+    },
+    "sameAs": ["https://sunnypatel.co.uk"]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "SEO Swansea",
+    "url": "https://seoswansea.uk",
+    "email": "2012.infinite@gmail.com",
+    "areaServed": [
+      { "@type": "City", "name": "Swansea" },
+      { "@type": "Place", "name": "Mumbles" },
+      { "@type": "Place", "name": "Sketty" },
+      { "@type": "Place", "name": "Morriston" },
+      { "@type": "Place", "name": "Uplands" },
+      { "@type": "Place", "name": "Gorseinon" },
+      { "@type": "Place", "name": "Neath" },
+      { "@type": "Place", "name": "Port Talbot" },
+      { "@type": "Place", "name": "Llanelli" },
+      { "@type": "AdministrativeArea", "name": "South Wales" }
+    ],
+    "serviceType": "Search Engine Optimisation"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://seoswansea.uk/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "SEO Swansea — Local Search Marketing for South Wales Businesses",
+    "url": "https://seoswansea.uk/",
+    "description": metaDescription
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map(item => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
+    }))
+  }
+];
+---
+
+<Base title="SEO Swansea | Local SEO Consultant" description={metaDescription} schema={schema}>
+
+  <article class="space-y-12">
+
+    <!-- H1 -->
+    <header>
+      <h1 class="text-3xl md:text-4xl font-bold text-text leading-tight">
+        SEO Swansea — Local Search Marketing for South Wales Businesses
+      </h1>
+    </header>
+
+    <!-- Opening paragraph -->
+    <section class="space-y-4 text-lg leading-relaxed text-text-muted">
+      <p>
+        SEO Swansea is a local search marketing consultancy that helps Swansea businesses rank higher on Google, attract more customers, and grow revenue through organic search. We specialise in local SEO for small and medium businesses across the SA postcode areas, from Mumbles seafront to Morriston, Sketty to SA1 Waterfront. Our approach combines technical SEO, content strategy, and Google Business Profile optimisation to deliver measurable results for businesses that depend on local customers.
+      </p>
+      <p>
+        Swansea is a city with a strong independent business culture. From the cafes and boutiques along Wind Street to the professional services clustered around Enterprise Park, local businesses compete against national chains with deeper pockets. SEO levels that playing field. When your website ranks for the searches your customers actually make, you capture demand that would otherwise flow to larger competitors or paid advertising platforms.
+      </p>
+    </section>
+
+    <!-- Quick Answer box -->
+    <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg my-6">
+      <p class="font-semibold text-amber-900 mb-1">Quick Answer</p>
+      <p class="text-amber-800">
+        SEO Swansea provides local search engine optimisation for businesses in Swansea, Neath Port Talbot, and South Wales. We offer a <a href="/free-seo-audit-swansea/" class="text-brand hover:underline font-medium">free SEO audit</a> to identify your biggest ranking opportunities, then deliver monthly SEO services from £350/month. Most clients see measurable improvements within three to six months.
+      </p>
+    </div>
+
+    <!-- Why Swansea businesses need local SEO -->
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold text-text">Why Swansea Businesses Need Local SEO</h2>
+      <p>
+        Swansea is the second-largest city in Wales with a population exceeding 240,000 and a broader economic catchment stretching from Llanelli in the west to Neath Port Talbot in the east. The city attracts over four million visitors annually to Swansea Bay, the Gower Peninsula, and the National Waterfront Museum. Every one of those residents and visitors turns to search engines when they need a local service, restaurant, tradesperson, or shop.
+      </p>
+      <p>
+        Google processes roughly 8.5 billion searches per day worldwide. A significant share of those searches carry local intent: "dentist near me", "best restaurant Swansea", "plumber SA1". If your business does not appear in those results, you are invisible to potential customers at the exact moment they are ready to spend money.
+      </p>
+      <p>
+        Local SEO is different from general SEO. It focuses on three areas that matter most for Swansea businesses:
+      </p>
+      <ul class="list-disc pl-6 space-y-2 text-text-muted">
+        <li><strong>Google Map Pack</strong> — the three-business panel that appears above organic results for local searches. Appearing here can increase clicks by 300% compared to a standard organic listing.</li>
+        <li><strong>Localised organic rankings</strong> — Google tailors organic results based on the searcher's location. A business in Uplands can outrank a national competitor for searches made from nearby postcodes, but only with proper local SEO signals.</li>
+        <li><strong>Google Business Profile</strong> — your free listing on Google Maps. An optimised profile with reviews, accurate opening hours, and relevant categories drives phone calls, direction requests, and website visits directly from search results.</li>
+      </ul>
+      <p>
+        Without local SEO, your Swansea business depends on paid advertising, social media algorithms, or word of mouth alone. All three are valuable, but none deliver the compound returns of organic search. A page that ranks today continues generating traffic for months or years without additional spend.
+      </p>
+    </section>
+
+    <!-- Our SEO Services Overview -->
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold text-text">Our SEO Services</h2>
+      <p>
+        We deliver a complete range of SEO services tailored to Swansea businesses. Every engagement starts with a thorough audit so we understand your current position, competitive landscape, and the fastest routes to ranking improvements. Explore our full <a href="/services/" class="text-brand hover:underline">SEO services</a> or read on for an overview.
+      </p>
+
+      <h3 class="text-xl font-semibold text-text mt-6">Local SEO</h3>
+      <p>
+        Our core service for Swansea businesses targeting local customers. We optimise your Google Business Profile, build consistent citations across directories, implement local schema markup, and create location-relevant content. This covers everything from ensuring your NAP (name, address, phone) data is consistent across the web to earning reviews that improve your map pack position.
+      </p>
+
+      <h3 class="text-xl font-semibold text-text mt-6">Technical SEO</h3>
+      <p>
+        Page speed, crawlability, mobile usability, structured data, and indexation management. Many Swansea business websites run on WordPress with outdated themes and bloated plugins that slow page loads and confuse search engine crawlers. Our <a href="/technical-seo-swansea/" class="text-brand hover:underline">technical SEO service</a> fixes these foundational issues so your content can actually rank.
+      </p>
+
+      <h3 class="text-xl font-semibold text-text mt-6">SEO Audits</h3>
+      <p>
+        A comprehensive <a href="/seo-audit-swansea/" class="text-brand hover:underline">SEO audit</a> examines every factor affecting your search visibility: on-page content, technical health, backlink profile, competitor positioning, and local search signals. We deliver a prioritised action plan ranked by impact and effort. Many clients use our audit as a one-off diagnostic before committing to monthly SEO.
+      </p>
+
+      <h3 class="text-xl font-semibold text-text mt-6">Content Strategy</h3>
+      <p>
+        Ranking requires content that matches search intent. We research the queries Swansea customers use, map content gaps against your competitors, and produce pages that answer real questions comprehensively. Whether you need service pages, blog posts, or location landing pages, our content is written with both search engines and human readers in mind.
+      </p>
+
+      <h3 class="text-xl font-semibold text-text mt-6">Link Building</h3>
+      <p>
+        Backlinks remain one of Google's strongest ranking signals. We earn links through local partnerships, industry directories, PR outreach, and content that naturally attracts citations. For Swansea businesses, local links from organisations like Swansea BID, the South Wales Chamber of Commerce, and relevant community groups carry particular authority.
+      </p>
+    </section>
+
+    <!-- Areas We Cover -->
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold text-text">Areas We Cover Across Swansea and South Wales</h2>
+      <p>
+        We provide SEO services across the Swansea conurbation and wider South Wales region. Each area has distinct search patterns and competitive dynamics that inform our strategy. Visit our <a href="/areas/" class="text-brand hover:underline">areas page</a> for location-specific information.
+      </p>
+      <div class="grid md:grid-cols-2 gap-4 mt-4">
+        <div class="border border-gray-200 rounded-lg p-4">
+          <h3 class="font-semibold text-text mb-2">Swansea City Centre and SA1 Waterfront</h3>
+          <p class="text-sm text-text-muted">
+            The commercial heart of the city, home to the Meridian Tower, Swansea Marina, and a growing cluster of tech and professional services businesses along the SA1 Waterfront development. Businesses here compete for high-intent searches from office workers, residents, and visitors to the National Waterfront Museum.
+          </p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-4">
+          <h3 class="font-semibold text-text mb-2">Mumbles</h3>
+          <p class="text-sm text-text-muted">
+            Swansea's coastal village with a thriving independent retail and hospitality scene. Mumbles Pier, Bracelet Bay, and the promenade draw tourists year-round. Local businesses here benefit from seasonal search spikes that well-timed SEO can capture.
+          </p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-4">
+          <h3 class="font-semibold text-text mb-2">Sketty and Uplands</h3>
+          <p class="text-sm text-text-muted">
+            Residential suburbs close to Swansea University and Singleton Park. High footfall from students and young professionals creates strong demand for food, fitness, beauty, and retail services. Local SEO here targets a digitally active demographic.
+          </p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-4">
+          <h3 class="font-semibold text-text mb-2">Morriston and Enterprise Park</h3>
+          <p class="text-sm text-text-muted">
+            Morriston Hospital is one of the largest employers in the region, and Enterprise Park hosts a concentration of B2B and trade businesses. SEO for businesses here often focuses on commercial-intent queries and service-area targeting across the SA6 postcode.
+          </p>
+        </div>
+      </div>
+      <p class="mt-4">
+        We also serve businesses in Gorseinon, Neath, Port Talbot, Llanelli, and across the broader South Wales corridor. Our local SEO strategies adapt to the specific search landscape of each location.
+      </p>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold text-text">Industries We Serve in Swansea</h2>
+      <p>
+        Swansea's economy spans tourism, healthcare, education, professional services, and a growing technology sector. Each industry has unique SEO requirements. Our <a href="/industries/" class="text-brand hover:underline">industry pages</a> detail how we approach SEO for specific sectors.
+      </p>
+
+      <h3 class="text-xl font-semibold text-text mt-6">Tourism and Hospitality</h3>
+      <p>
+        Swansea Bay and the Gower Peninsula attract millions of visitors each year. Hotels, restaurants, activity providers, and tourist attractions compete for searches like "things to do in Swansea" and "best restaurants Mumbles". We help tourism businesses capture seasonal demand through content calendars aligned with visitor search patterns, optimised Google Business Profiles with seasonal updates, and schema markup that earns rich snippets for events and attractions.
+      </p>
+
+      <h3 class="text-xl font-semibold text-text mt-6">Healthcare</h3>
+      <p>
+        Private healthcare providers, dentists, physiotherapists, and wellness clinics around Swansea face strict YMYL (Your Money or Your Life) requirements from Google. Content must demonstrate expertise, authority, and trustworthiness. We build healthcare SEO strategies that satisfy these requirements while targeting high-value local searches. Proximity to Morriston Hospital and Singleton Hospital creates clusters of health-related search demand we help our clients capture.
+      </p>
+
+      <h3 class="text-xl font-semibold text-text mt-6">Education</h3>
+      <p>
+        Swansea University and the University of Wales Trinity Saint David bring over 20,000 students to the city. Tutoring services, private education providers, training companies, and student-focused businesses benefit from SEO strategies targeting both student and parent search behaviour. We also support EdTech companies based in the Swansea tech cluster.
+      </p>
+
+      <h3 class="text-xl font-semibold text-text mt-6">Professional and Trade Services</h3>
+      <p>
+        Accountants, solicitors, architects, plumbers, electricians, and builders serve the Swansea market. For these businesses, ranking for "[service] + Swansea" queries delivers direct leads. We combine service page optimisation, review generation, and local link building to dominate these high-conversion searches.
+      </p>
+    </section>
+
+    <!-- Why Choose SEO Swansea -->
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold text-text">Why Choose SEO Swansea</h2>
+      <p>
+        SEO Swansea is run by <a href="https://sunnypatel.co.uk" class="text-brand hover:underline" rel="noopener">Sunny Patel</a>, an SEO consultant who manages a portfolio of over 40 websites across competitive niches. This is not a reseller operation or a call-centre agency. You work directly with the person doing the work.
+      </p>
+      <p>
+        Here is what sets us apart from other SEO providers in South Wales:
+      </p>
+      <ul class="list-disc pl-6 space-y-3 text-text-muted">
+        <li>
+          <strong>Transparency.</strong> You receive full access to your Google Search Console and analytics data. Monthly reports show exactly which keywords improved, how much traffic increased, and what work was completed. No black-box reporting.
+        </li>
+        <li>
+          <strong>No long-term contracts.</strong> We operate on rolling monthly agreements. You stay because the results justify the investment, not because you are locked in. If SEO is not delivering ROI, you should not be paying for it.
+        </li>
+        <li>
+          <strong>Technical depth.</strong> Many agencies outsource technical work. We handle everything in-house: site speed optimisation, structured data implementation, crawl budget management, Core Web Vitals fixes, and server configuration. Our <a href="/technical-seo-swansea/" class="text-brand hover:underline">technical SEO</a> work goes beyond surface-level recommendations.
+        </li>
+        <li>
+          <strong>Local knowledge.</strong> We understand the Swansea market. We know that tourists searching near Swansea Bay have different intent from residents in Sketty. We know which local directories matter and which are a waste of time. This specificity makes our local SEO strategies more effective than generic national approaches.
+        </li>
+        <li>
+          <strong>Data-led decisions.</strong> Every recommendation is backed by search data from Google Search Console, keyword research tools, and competitor analysis. We do not guess. We measure, prioritise by impact, execute, and report.
+        </li>
+      </ul>
+      <p>
+        Learn more about our approach on the <a href="/about/" class="text-brand hover:underline">about page</a> or see examples of our work on the <a href="/case-studies/" class="text-brand hover:underline">case studies page</a>.
+      </p>
+    </section>
+
+    <!-- AI Search Readiness -->
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold text-text">AI Search Optimisation for Swansea Businesses</h2>
+      <p>
+        The search landscape is shifting. Google AI Overviews, ChatGPT, Microsoft Copilot, and Perplexity are changing how consumers find answers and make purchasing decisions. These tools pull information from websites that are structured clearly, written authoritatively, and technically accessible to AI crawlers.
+      </p>
+      <p>
+        Most Swansea business websites are not ready for this shift. They lack the structured data, clear entity definitions, and content architecture that AI systems need to extract and cite information accurately. This creates both a risk and an opportunity.
+      </p>
+      <p>
+        The risk: businesses that ignore AI search optimisation will become invisible as AI-generated answers replace traditional search results for an increasing share of queries.
+      </p>
+      <p>
+        The opportunity: businesses that optimise now, while competitors are still focused on traditional SEO alone, will establish themselves as the default source that AI tools cite for Swansea-related queries.
+      </p>
+      <p>
+        Our <a href="/ai-search-optimisation-swansea/" class="text-brand hover:underline">AI search optimisation service</a> prepares your website for this new reality. We implement structured data that AI systems can parse, create content in formats that large language models prefer to cite, and monitor your visibility across AI search platforms.
+      </p>
+      <p>
+        This is not a replacement for traditional SEO. It is an additional layer that forward-thinking Swansea businesses are adopting to protect and extend their search visibility into the AI era.
+      </p>
+    </section>
+
+    <!-- The Swansea SEO Process -->
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold text-text">How Our SEO Process Works</h2>
+      <p>
+        Every engagement follows a structured process designed to deliver results as efficiently as possible.
+      </p>
+      <ol class="list-decimal pl-6 space-y-4 text-text-muted">
+        <li>
+          <strong>Free SEO Audit.</strong> We analyse your website, Google Business Profile, competitors, and local search landscape. You receive a prioritised list of opportunities with estimated impact. This is free and carries no obligation. <a href="/free-seo-audit-swansea/" class="text-brand hover:underline">Request yours here</a>.
+        </li>
+        <li>
+          <strong>Strategy and Proposal.</strong> Based on the audit, we recommend a monthly SEO plan tailored to your budget and goals. We explain exactly what work will be done each month and what results to expect at 3, 6, and 12 month intervals. View our <a href="/seo-pricing-swansea/" class="text-brand hover:underline">SEO pricing</a> for indicative costs.
+        </li>
+        <li>
+          <strong>Technical Foundation.</strong> Month one focuses on fixing technical issues that prevent your site from ranking. Page speed, mobile usability, crawl errors, duplicate content, broken links, and structured data implementation. These fixes create the foundation everything else builds on.
+        </li>
+        <li>
+          <strong>Content and Local Optimisation.</strong> With the technical base in place, we optimise existing pages, create new content targeting priority keywords, and strengthen your Google Business Profile. For Swansea businesses, this includes location-specific landing pages, service pages optimised for local search intent, and a review acquisition strategy.
+        </li>
+        <li>
+          <strong>Link Building and Authority.</strong> We earn backlinks from relevant local and industry sources. For Swansea businesses, this includes local business directories, community organisations, industry publications, and partnerships with complementary businesses.
+        </li>
+        <li>
+          <strong>Monthly Reporting and Iteration.</strong> Every month you receive a report covering keyword rankings, traffic changes, work completed, and the plan for the coming month. We adjust strategy based on what the data tells us. SEO is iterative, and we continuously refine our approach based on results.
+        </li>
+      </ol>
+    </section>
+
+    <!-- Swansea Market Context -->
+    <section class="space-y-4">
+      <h2 class="text-2xl font-semibold text-text">Understanding the Swansea Market</h2>
+      <p>
+        Swansea occupies a unique position in the Welsh economy. The city is large enough to generate significant search volume across most commercial categories, yet small enough that local SEO can deliver outsized returns compared to competing in a market like London or Birmingham.
+      </p>
+      <p>
+        The DVLA headquarters in Morriston employs thousands and anchors a cluster of automotive and administrative services. Swansea University and its innovation campus on Fabian Way drive demand for technology, education, and student services. The Liberty Stadium draws 20,000 supporters on match days, creating periodic spikes in hospitality and transport searches. The regeneration of the SA1 Waterfront district has attracted new businesses and residents, expanding the local search market.
+      </p>
+      <p>
+        Seasonality plays a significant role. Searches for tourism, outdoor activities, and hospitality peak dramatically during summer months when the Gower Peninsula and Swansea Bay become major holiday destinations. Businesses that prepare content ahead of these seasonal peaks capture traffic that competitors miss entirely.
+      </p>
+      <p>
+        The competitive landscape in Swansea is still relatively open. Many local businesses either do no SEO at all or rely on basic social media presence. This means a well-executed SEO campaign can deliver disproportionate results quickly compared to more saturated markets. The window of opportunity will not last indefinitely as more businesses recognise the value of organic search.
+      </p>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gray-50 rounded-xl p-8 text-center space-y-4 mt-12">
+      <h2 class="text-2xl font-semibold text-text">Get Your Free SEO Audit</h2>
+      <p class="text-text-muted max-w-xl mx-auto">
+        Find out how your Swansea business is performing in search and what it would take to rank higher. Our free audit covers technical health, local SEO signals, content gaps, and competitor positioning. No obligation, no sales pressure.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mt-6">
+        <a href="/free-seo-audit-swansea/" class="bg-brand text-white px-6 py-3 rounded-lg hover:bg-brand-dark transition-colors font-medium inline-block">
+          Request Free Audit
+        </a>
+        <a href="/contact/" class="border border-brand text-brand px-6 py-3 rounded-lg hover:bg-brand hover:text-white transition-colors font-medium inline-block">
+          Contact Us
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="space-y-4 mt-12">
+      <h2 class="text-2xl font-semibold text-text">Frequently Asked Questions About SEO in Swansea</h2>
+      <div class="space-y-3 mt-6">
+        {faqItems.map(item => (
+          <details class="border border-gray-200 rounded-lg group">
+            <summary class="flex items-center justify-between cursor-pointer p-4 font-medium text-text hover:bg-gray-50 transition-colors rounded-lg">
+              <span>{item.q}</span>
+              <svg class="w-5 h-5 text-text-muted flex-shrink-0 ml-4 group-open:rotate-180 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            </summary>
+            <div class="px-4 pb-4 text-text-muted leading-relaxed">
+              <p>{item.a}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="space-y-4 mt-12 pb-4">
+      <h2 class="text-2xl font-semibold text-text">Start Growing Your Swansea Business Through Search</h2>
+      <p>
+        Every day your website does not rank for the searches your customers make, you lose potential revenue to competitors who do. SEO is not a cost, it is an investment that compounds over time. The businesses that start now build an advantage that becomes increasingly difficult for latecomers to close.
+      </p>
+      <p>
+        Whether you run a restaurant in Mumbles, a trade business in Morriston, a professional practice in the city centre, or a tourism venture on the Gower Peninsula, local SEO is the most reliable way to grow your customer base through search.
+      </p>
+      <p>
+        <a href="/free-seo-audit-swansea/" class="text-brand hover:underline font-medium">Request your free SEO audit</a> to see where you stand and what we can achieve together. Or visit our <a href="/seo-pricing-swansea/" class="text-brand hover:underline">pricing page</a> if you are ready to compare packages.
+      </p>
+    </section>
+
+  </article>
+
+</Base>

@@ -1,0 +1,239 @@
+---
+import Base from '../layouts/Base.astro';
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://seoswansea.uk/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://seoswansea.uk/services/" },
+      { "@type": "ListItem", "position": 3, "name": "SEO Audit", "item": "https://seoswansea.uk/seo-audit-swansea/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "SEO Audit Swansea | Full Site Analysis",
+    "description": "Professional SEO audit for Swansea businesses covering technical health, on-page optimisation, backlink profile, local SEO, and competitor analysis with a prioritised action plan.",
+    "url": "https://seoswansea.uk/seo-audit-swansea/",
+    "publisher": { "@type": "Organization", "name": "SEO Swansea", "url": "https://seoswansea.uk" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is included in an SEO audit for a Swansea business?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A full SEO audit covers five areas: technical health (site speed, crawlability, indexation, HTTPS), on-page optimisation (titles, meta descriptions, headings, content quality), off-page analysis (backlink profile, referring domains, toxic links), local SEO (Google Business Profile, citations, local schema), and competitor analysis. You receive a prioritised report with specific recommendations ranked by impact." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does an SEO audit take?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A standard audit for a Swansea business website with up to 100 pages takes 5 to 7 working days. Larger sites with hundreds or thousands of pages, such as e-commerce stores or directories, may take up to two weeks. You receive the full written report plus a 30-minute walkthrough call to discuss findings and priorities." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does an SEO audit cost in Swansea?",
+        "acceptedAnswer": { "@type": "Answer", "text": "SEO audit pricing starts from £500 for small business websites. The exact cost depends on the number of pages, complexity of your CMS, and whether you need competitor analysis included. Visit our pricing page for full details or request a custom quote for your Swansea business." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a free SEO audit and a paid audit?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The free audit is an automated health check covering headline issues like site speed, mobile usability, broken links, and basic on-page factors. The paid audit is a manual, in-depth analysis conducted by an SEO specialist covering all five audit pillars with a detailed written report, spreadsheet of issues, and a strategy call. The paid audit finds issues that automated tools miss." }
+      },
+      {
+        "@type": "Question",
+        "name": "Will the audit fix my website or just identify problems?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The audit identifies and prioritises problems but does not include implementation. We provide clear, actionable recommendations that your developer or team can follow. If you want us to implement the fixes, we offer that as a separate service or as part of an ongoing SEO retainer. Many Swansea businesses choose to start with the audit and then move to a monthly retainer for implementation." }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should a Swansea business run an SEO audit?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We recommend a comprehensive audit every 12 months at minimum, with lighter quarterly reviews in between. You should also run an audit after any major website change such as a redesign, CMS migration, or domain move. If your rankings suddenly drop, an audit is the fastest way to identify whether a technical issue or Google algorithm update is the cause." }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "SEO Audit Swansea",
+    "provider": { "@type": "Organization", "name": "SEO Swansea", "url": "https://seoswansea.uk" },
+    "areaServed": { "@type": "City", "name": "Swansea" },
+    "serviceType": "Search Engine Optimisation",
+    "description": "Comprehensive SEO audit for Swansea businesses covering technical health, on-page factors, backlink profile, local SEO, and competitor analysis.",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "GBP",
+      "price": "500",
+      "priceSpecification": { "@type": "UnitPriceSpecification", "price": "500", "priceCurrency": "GBP", "unitText": "one-off audit" }
+    }
+  }
+];
+---
+
+<Base title="SEO Audit Swansea | Full Site Analysis" description="Professional SEO audit for Swansea businesses covering technical health, on-page optimisation, backlink profile, local SEO, and competitor analysis with a prioritised action plan." schema={schema}>
+
+  <nav class="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+    <a href="/" class="text-brand hover:underline">Home</a>
+    <span class="mx-1">/</span>
+    <a href="/services/" class="text-brand hover:underline">Services</a>
+    <span class="mx-1">/</span>
+    <span class="text-gray-700">SEO Audit</span>
+  </nav>
+
+  <h1 class="text-3xl font-bold text-brand mb-4">SEO Audit for Swansea Businesses</h1>
+
+  <p class="text-gray-700 leading-relaxed mb-4">An SEO audit in Swansea is a systematic examination of your website's search performance across five critical areas: technical health, on-page optimisation, off-page authority, local SEO presence, and competitor positioning. The audit reveals exactly why your website ranks where it does in Google, identifies the specific barriers preventing better performance, and delivers a prioritised action plan that focuses your budget and effort on the changes that will generate the most visibility and revenue for your Swansea business.</p>
+
+  <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg my-6">
+    <p class="font-medium text-gray-900 mb-1">Quick Answer</p>
+    <p class="text-gray-700">An SEO audit analyses your website's technical health, content quality, backlink profile, local SEO, and competitor landscape. For Swansea businesses, it identifies the exact fixes needed to improve Google rankings and attract more local customers. A full audit takes 5 to 10 working days and starts from £500.</p>
+  </div>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Most Swansea businesses know their website could perform better in search but do not know where to start. An SEO audit removes the guesswork. Instead of implementing random tips from blog posts or making changes based on assumptions, you get a data-driven assessment of your current position and a clear roadmap to improve it. Whether you operate from Swansea Marina, Wind Street, the SA1 Waterfront business district, or Enterprise Park in Llansamlet, the audit is tailored to your market, location, and competitive landscape.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">We audit websites of every size, from five-page brochure sites for Mumbles-based sole traders to large e-commerce platforms and multi-location service businesses across Swansea Bay. The methodology is the same, but the depth scales to match the complexity of your website and the competitiveness of your market.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">What Is Included in the Audit</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Every SEO audit we conduct covers five pillars. Each one examines a different dimension of your website's search performance and together they provide a complete picture of where you stand and what needs to change.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Technical SEO Analysis</h3>
+
+  <p class="text-gray-700 leading-relaxed mb-4">The technical pillar examines your website's infrastructure. We crawl every page using Screaming Frog and cross-reference the results with Google Search Console data. This reveals broken links, redirect chains and loops, duplicate content issues, missing or misconfigured canonical tags, robots.txt errors, XML sitemap problems, and Core Web Vitals failures. We test site speed on both mobile and desktop, check HTTPS configuration, and verify that your site is fully crawlable and indexable. For a deeper look at this area, see our <a href="/technical-seo-swansea/" class="text-brand hover:underline">technical SEO service page</a>.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">On-Page SEO Review</h3>
+
+  <p class="text-gray-700 leading-relaxed mb-4">The on-page review analyses the content and HTML elements on each page. We check title tags and meta descriptions for length, keyword inclusion, and click-through appeal. We review heading hierarchy to ensure proper H1 through H4 structure. We assess content quality, looking at word count, keyword relevance, topical depth, duplicate content, and thin pages. We also audit internal linking to ensure important pages receive sufficient link equity and that your site architecture makes logical sense to both users and search engines.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Off-Page and Backlink Analysis</h3>
+
+  <p class="text-gray-700 leading-relaxed mb-4">We pull your full backlink profile using Ahrefs to assess the quantity, quality, and relevance of sites linking to you. We identify toxic or spammy links that could be harming your rankings, find your strongest referring domains, and compare your link profile against your top Swansea competitors. This analysis reveals whether you need to build more links, disavow harmful ones, or focus on earning links from specific types of local and industry-relevant sources.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Local SEO Assessment</h3>
+
+  <p class="text-gray-700 leading-relaxed mb-4">For Swansea businesses that serve local customers, the local SEO pillar is often the most commercially valuable. We audit your Google Business Profile for completeness and accuracy, check NAP consistency across online directories and citations, review your local schema markup, and assess your visibility in Google's local pack and map results. We also check local landing pages for the areas you serve, whether that is Mumbles, Sketty, Morriston, Uplands, or the wider Swansea Bay region.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Competitor Analysis</h3>
+
+  <p class="text-gray-700 leading-relaxed mb-4">We identify your top three to five organic competitors in the Swansea market and analyse what they are doing differently. This includes comparing keyword rankings, content depth and coverage, backlink profiles, technical performance, and local SEO signals. The competitor analysis reveals gaps and opportunities, showing you where competitors are weak and where you can overtake them with targeted improvements.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">The Audit Process</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Our audit follows a structured process designed to be thorough without disrupting your business operations. Here is what happens from start to finish.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Step 1: Discovery and Access</h3>
+  <p class="text-gray-700 leading-relaxed mb-4">We begin with a brief questionnaire about your business, target audience, key services, and geographic focus within Swansea. We then request read-only access to your Google Search Console, Google Analytics, and Google Business Profile. If you do not have these set up, we will configure them as part of the audit at no extra cost.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Step 2: Data Collection</h3>
+  <p class="text-gray-700 leading-relaxed mb-4">We run a full crawl of your website, pull 16 months of Search Console data, export your backlink profile from Ahrefs, and gather competitor intelligence. This data collection phase typically takes one to two days and requires no involvement from you.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Step 3: Analysis</h3>
+  <p class="text-gray-700 leading-relaxed mb-4">An SEO specialist manually analyses the data across all five audit pillars. We do not rely on automated reports alone. While tools generate the raw data, the analysis, prioritisation, and recommendations come from an experienced professional who understands the Swansea market and the nuances of local search.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Step 4: Report Delivery</h3>
+  <p class="text-gray-700 leading-relaxed mb-4">You receive a written report covering all findings, a spreadsheet listing every issue with severity ratings and recommended fixes, and a prioritised action plan. Each recommendation is categorised as critical, high, medium, or low priority so you know exactly where to focus first.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Step 5: Walkthrough Call</h3>
+  <p class="text-gray-700 leading-relaxed mb-4">We schedule a 30-minute video call to walk through the findings, answer your questions, and discuss the recommended next steps. This ensures you understand not just what needs fixing but why each change matters and how it connects to your business goals in the Swansea market.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">What You Get</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Every audit includes the following deliverables, sent to you as a combination of PDF, spreadsheet, and shared documents.</p>
+
+  <ul class="text-gray-700 leading-relaxed mb-4 space-y-2 list-disc list-inside">
+    <li>Executive summary with the three most impactful findings and recommended actions</li>
+    <li>Full technical health report covering crawlability, indexation, speed, and security</li>
+    <li>On-page analysis with page-by-page title, meta, heading, and content recommendations</li>
+    <li>Backlink profile report with toxic link identification and link-building opportunities</li>
+    <li>Local SEO scorecard covering Google Business Profile, citations, and local schema</li>
+    <li>Competitor benchmark comparing your performance against the top Swansea competitors</li>
+    <li>Prioritised action plan with issues ranked by impact and effort</li>
+    <li>30-minute video walkthrough call</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Who Needs an SEO Audit</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">An SEO audit is valuable for any Swansea business with a website, but it is especially important in certain situations. If any of the following apply to you, an audit should be a priority.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4"><strong>New websites.</strong> If you have recently launched a website for a Swansea business, an early audit ensures your technical foundations are correct from the start. Fixing issues in the first few months is far easier and cheaper than unpicking problems that have compounded over years.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4"><strong>Website redesigns and migrations.</strong> Redesigns and platform migrations are the most common cause of catastrophic ranking drops. An audit before the migration sets a baseline, and an audit afterwards catches any issues introduced by the changeover. We have seen Swansea businesses lose 80 percent of their organic traffic after a redesign because redirects were not properly mapped or canonical tags were misconfigured.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4"><strong>Ranking drops.</strong> If your Google rankings have suddenly fallen, an audit is the fastest way to diagnose whether the cause is a technical issue, a Google algorithm update, a penalty, or a competitor improvement. Without an audit, you are guessing at the cause and risk wasting time and money fixing the wrong thing.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4"><strong>New businesses in SA1, Enterprise Park, and Swansea Bay.</strong> Businesses establishing themselves in Swansea's commercial hubs need strong online visibility from day one. An audit of your initial website ensures you are not starting with hidden technical debt that will limit your growth in local search results. Whether you are a tech startup at SA1 Waterfront or a trade business at Enterprise Park in Llansamlet, getting the foundations right early saves significant cost and time later.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4"><strong>Businesses that have never had an audit.</strong> If your website is more than two years old and has never been professionally audited, it almost certainly has accumulated technical issues, outdated content, and missed opportunities that are silently costing you rankings and revenue.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Pricing</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">SEO audit pricing depends on the size and complexity of your website. Small brochure sites with under 50 pages start from £500. Medium-sized sites with 50 to 500 pages are typically £750 to £1,200. Large or complex websites with custom requirements are quoted individually. All audits include the full five-pillar analysis and walkthrough call described above.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">For a complete breakdown of our audit and ongoing SEO service pricing, visit our <a href="/seo-pricing-swansea/" class="text-brand hover:underline">SEO pricing page</a>.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Full Audit vs Free Audit</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">We offer both a comprehensive paid audit and a <a href="/free-seo-audit-swansea/" class="text-brand hover:underline">free SEO audit</a>. The free audit is an automated health check that covers headline issues including site speed, mobile usability, basic on-page factors, and common technical errors. It is a useful starting point that gives you a snapshot of your site's health in minutes.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">The full paid audit goes much deeper. It is conducted manually by an SEO specialist, covers all five audit pillars including competitor analysis and local SEO, analyses 16 months of Search Console data, includes a backlink profile review, and produces a written report with a prioritised action plan. The paid audit finds issues that automated tools simply cannot detect, such as content cannibalisation, internal link equity distribution problems, and strategic gaps relative to your Swansea competitors.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">If you are not sure which you need, start with the <a href="/free-seo-audit-swansea/" class="text-brand hover:underline">free audit</a>. It will give you enough information to decide whether a full audit is warranted for your business.</p>
+
+  <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 my-8 text-center">
+    <p class="text-lg font-semibold text-gray-900 mb-2">Find out exactly what is holding your Swansea website back</p>
+    <p class="text-gray-700 mb-4">Start with a free audit or book a full analysis with a prioritised action plan.</p>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="/free-seo-audit-swansea/" class="bg-brand text-white px-6 py-3 rounded-lg hover:bg-brand-dark inline-block">Free SEO Audit</a>
+      <a href="/contact/" class="border border-brand text-brand px-6 py-3 rounded-lg hover:bg-brand hover:text-white inline-block transition-colors">Book Full Audit</a>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Frequently Asked Questions</h2>
+
+  <div class="space-y-2 mb-8">
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">What is included in an SEO audit for a Swansea business?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">A full SEO audit covers five areas: technical health (site speed, crawlability, indexation, HTTPS), on-page optimisation (titles, meta descriptions, headings, content quality), off-page analysis (backlink profile, referring domains, toxic links), local SEO (Google Business Profile, citations, local schema), and competitor analysis. You receive a prioritised report with specific recommendations ranked by impact.</p>
+    </details>
+
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">How long does an SEO audit take?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">A standard audit for a Swansea business website with up to 100 pages takes 5 to 7 working days. Larger sites with hundreds or thousands of pages, such as e-commerce stores or directories, may take up to two weeks. You receive the full written report plus a 30-minute walkthrough call to discuss findings and priorities.</p>
+    </details>
+
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">How much does an SEO audit cost in Swansea?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">SEO audit pricing starts from £500 for small business websites. The exact cost depends on the number of pages, complexity of your CMS, and whether you need competitor analysis included. Visit our <a href="/seo-pricing-swansea/" class="text-brand hover:underline">pricing page</a> for full details or request a custom quote for your Swansea business.</p>
+    </details>
+
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">What is the difference between a free SEO audit and a paid audit?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">The free audit is an automated health check covering headline issues like site speed, mobile usability, broken links, and basic on-page factors. The paid audit is a manual, in-depth analysis conducted by an SEO specialist covering all five audit pillars with a detailed written report, spreadsheet of issues, and a strategy call. The paid audit finds issues that automated tools miss.</p>
+    </details>
+
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">Will the audit fix my website or just identify problems?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">The audit identifies and prioritises problems but does not include implementation. We provide clear, actionable recommendations that your developer or team can follow. If you want us to implement the fixes, we offer that as a separate service or as part of an ongoing SEO retainer. Many Swansea businesses choose to start with the audit and then move to a monthly retainer for implementation.</p>
+    </details>
+
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">How often should a Swansea business run an SEO audit?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">We recommend a comprehensive audit every 12 months at minimum, with lighter quarterly reviews in between. You should also run an audit after any major website change such as a redesign, CMS migration, or domain move. If your rankings suddenly drop, an audit is the fastest way to identify whether a technical issue or Google algorithm update is the cause.</p>
+    </details>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Related Services</h2>
+
+  <ul class="text-gray-700 leading-relaxed mb-4 space-y-2">
+    <li><a href="/technical-seo-swansea/" class="text-brand hover:underline">Technical SEO</a> — deep-dive into site speed, crawlability, structured data, and security</li>
+    <li><a href="/free-seo-audit-swansea/" class="text-brand hover:underline">Free SEO Audit</a> — quick automated health check to identify headline issues</li>
+    <li><a href="/seo-pricing-swansea/" class="text-brand hover:underline">SEO Pricing</a> — transparent pricing for audits, retainers, and one-off projects</li>
+    <li><a href="/case-studies/" class="text-brand hover:underline">Case Studies</a> — real results for Swansea and South Wales businesses</li>
+  </ul>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Ready to find out what your website needs? <a href="/contact/" class="text-brand hover:underline">Contact us</a> to discuss your audit or start with a <a href="/free-seo-audit-swansea/" class="text-brand hover:underline">free SEO health check</a>.</p>
+
+</Base>

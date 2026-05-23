@@ -1,0 +1,219 @@
+---
+import Base from '../layouts/Base.astro';
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://seoswansea.uk/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://seoswansea.uk/services/" },
+      { "@type": "ListItem", "position": 3, "name": "Free SEO Audit", "item": "https://seoswansea.uk/free-seo-audit-swansea/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Free SEO Audit Swansea | Get Yours Now",
+    "description": "Get a free SEO audit for your Swansea business. We check site speed, mobile usability, on-page SEO, and local visibility then send you a report with quick wins.",
+    "url": "https://seoswansea.uk/free-seo-audit-swansea/",
+    "publisher": { "@type": "Organization", "name": "SEO Swansea", "url": "https://seoswansea.uk" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is the free SEO audit really free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. There is no charge, no obligation, and no credit card required. We review your website and send you a report highlighting the key issues and opportunities. You decide what to do with it. There is no sales call unless you request one." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does the free audit take to receive?",
+        "acceptedAnswer": { "@type": "Answer", "text": "You will receive your free SEO audit report within 2 working days of submitting the form. Most reports are delivered the same day or the next morning depending on when you submit your request." }
+      },
+      {
+        "@type": "Question",
+        "name": "What information do I need to provide?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Just your name, email address, website URL, and your business location in Swansea. We do not need access to your hosting, CMS, or any accounts. The free audit is based on what we can analyse from the public-facing version of your website." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between the free audit and the full paid audit?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The free audit covers headline issues including site speed, mobile usability, on-page SEO basics, and local visibility signals. The full paid audit adds manual analysis by an SEO specialist, 16 months of Search Console data review, backlink profile analysis, competitor benchmarking, and a prioritised action plan with a walkthrough call. Visit our SEO audit page for full details on the paid option." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use the free audit results to do SEO myself?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. The report includes specific, actionable recommendations that you or your developer can implement without hiring us. Many Swansea business owners use the free audit to handle the basics themselves and then come back to us for the more complex technical and strategic work." }
+      }
+    ]
+  }
+];
+---
+
+<Base title="Free SEO Audit Swansea | Get Yours Now" description="Get a free SEO audit for your Swansea business. We check site speed, mobile usability, on-page SEO, and local visibility then send you a report with actionable quick wins." schema={schema}>
+
+  <nav class="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+    <a href="/" class="text-brand hover:underline">Home</a>
+    <span class="mx-1">/</span>
+    <a href="/services/" class="text-brand hover:underline">Services</a>
+    <span class="mx-1">/</span>
+    <span class="text-gray-700">Free SEO Audit</span>
+  </nav>
+
+  <h1 class="text-3xl font-bold text-brand mb-4">Free SEO Audit for Swansea Businesses</h1>
+
+  <p class="text-gray-700 leading-relaxed mb-4">The free SEO audit from SEO Swansea is a no-obligation health check that analyses your website's search performance and identifies the highest-impact opportunities for improvement. We review your site speed, mobile usability, on-page SEO, and local visibility signals, then send you a clear report showing exactly what is working, what is not, and what to fix first. It is designed for Swansea business owners who want honest, data-backed answers about their website's search presence without committing to a paid service.</p>
+
+  <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg my-6">
+    <p class="font-medium text-gray-900 mb-1">Quick Answer</p>
+    <p class="text-gray-700">Submit your website URL below and receive a free SEO report within 2 working days. No obligation, no sales call. We check speed, mobile friendliness, on-page SEO, and local signals, then tell you what to fix first.</p>
+  </div>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Whether you run a café in Mumbles, a consultancy at SA1 Waterfront, or a trades business serving the Gower Peninsula, this free audit gives you a practical starting point. You will know whether your website is helping or hindering your ability to attract customers through Google, and you will have specific actions you can take immediately to improve your position.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">What You Get in the Free Audit</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">The free audit covers the four areas that have the greatest impact on how your Swansea business appears in search results. Each section of the report includes a score or status indicator along with plain-language recommendations.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4"><strong>Site speed analysis.</strong> We measure your page load time and Core Web Vitals scores on both mobile and desktop. Slow pages lose visitors and rank lower in Google. The report identifies the specific elements slowing your site down, whether that is uncompressed images, render-blocking scripts, or slow server response times, and tells you how to fix them.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4"><strong>Mobile usability check.</strong> Over 60 percent of local searches in Swansea happen on mobile devices. We test your website on multiple screen sizes and flag issues like text that is too small to read, buttons too close together to tap accurately, horizontal scrolling, and content that is hidden or broken on mobile. Google uses mobile-first indexing, so mobile usability directly affects your rankings on all devices.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4"><strong>On-page SEO review.</strong> We check your title tags, meta descriptions, heading structure, and content quality on your key pages. Missing or duplicate titles, weak meta descriptions, and poor heading hierarchy are among the most common on-page issues we find on Swansea business websites. These are often the fastest fixes with the most immediate ranking impact.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4"><strong>Local SEO visibility signals.</strong> We review your Google Business Profile presence, check for basic local schema markup, and assess whether your website is optimised for location-based searches. For businesses serving Swansea, Gower, and the surrounding area, local SEO signals determine whether you appear in Google's local pack and map results when potential customers search for your services nearby.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">How It Works</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Getting your free SEO audit takes three simple steps. There are no calls, no commitments, and no strings attached.</p>
+
+  <div class="grid gap-6 md:grid-cols-3 my-6">
+    <div class="bg-gray-50 rounded-lg p-5 text-center">
+      <p class="text-2xl font-bold text-brand mb-2">1</p>
+      <p class="font-semibold text-gray-900 mb-1">Submit the Form</p>
+      <p class="text-gray-700 text-sm">Enter your name, email, website URL, and business location in Swansea using the form below.</p>
+    </div>
+    <div class="bg-gray-50 rounded-lg p-5 text-center">
+      <p class="text-2xl font-bold text-brand mb-2">2</p>
+      <p class="font-semibold text-gray-900 mb-1">We Analyse Your Site</p>
+      <p class="text-gray-700 text-sm">We run automated checks and a manual review covering speed, mobile, on-page SEO, and local visibility.</p>
+    </div>
+    <div class="bg-gray-50 rounded-lg p-5 text-center">
+      <p class="text-2xl font-bold text-brand mb-2">3</p>
+      <p class="font-semibold text-gray-900 mb-1">Receive Your Report</p>
+      <p class="text-gray-700 text-sm">Your report arrives by email within 2 working days with scores, findings, and prioritised recommendations.</p>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">What We Check</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">The free audit examines the following areas of your website. Each check produces a specific finding with a clear recommendation.</p>
+
+  <ul class="text-gray-700 leading-relaxed mb-4 space-y-2 list-disc list-inside">
+    <li>Page load speed on mobile and desktop with Core Web Vitals scores</li>
+    <li>Mobile responsiveness and touch-target sizing</li>
+    <li>Title tag length, uniqueness, and keyword relevance</li>
+    <li>Meta description presence and quality</li>
+    <li>Heading hierarchy and H1 tag usage</li>
+    <li>HTTPS status and SSL certificate validity</li>
+    <li>Broken links and redirect issues on your key pages</li>
+    <li>Image optimisation including alt text, file size, and modern formats</li>
+    <li>Google Business Profile presence and basic completeness</li>
+    <li>Local schema markup detection</li>
+    <li>Robots.txt and XML sitemap accessibility</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Who Is This For</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">The free SEO audit is built for Swansea business owners and marketers who want a clear, honest picture of their website's search performance. It is particularly useful if you fall into any of these categories.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4"><strong>You have never had an SEO audit.</strong> If your website has been live for more than six months and no one has reviewed its SEO performance, the free audit will almost certainly reveal issues you did not know existed. Most Swansea websites we audit have at least three or four quick wins that can be implemented the same week.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4"><strong>You are considering investing in SEO.</strong> Before committing to an SEO retainer, the free audit gives you an independent assessment of your current position. It helps you understand the scale of work needed and whether the potential return justifies the investment for your Swansea business.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4"><strong>You want to compare agencies.</strong> If you are evaluating multiple SEO providers in Swansea or South Wales, our free audit gives you a benchmark. You can compare our findings and recommendations against what other agencies are telling you and make an informed decision based on substance rather than sales pitches.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4"><strong>You are a new business in Swansea.</strong> If you have recently opened a business in Mumbles, SA1 Waterfront, the Gower Peninsula, or anywhere across Swansea, the free audit ensures your website is set up correctly for local search from day one. Catching issues early prevents them from compounding over time.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4" id="form">Request Your Free SEO Audit</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Fill in the form below and we will send your free SEO audit report within 2 working days. No obligation, no sales call.</p>
+
+  <form action="#" method="POST" class="bg-gray-50 border border-gray-200 rounded-lg p-6 space-y-4 my-6">
+    <div>
+      <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+      <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand" placeholder="e.g. Rhys Davies" />
+    </div>
+    <div>
+      <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+      <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand" placeholder="you@yourbusiness.co.uk" />
+    </div>
+    <div>
+      <label for="website" class="block text-sm font-medium text-gray-700 mb-1">Website URL</label>
+      <input type="url" id="website" name="website" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand" placeholder="https://www.yourbusiness.co.uk" />
+    </div>
+    <div>
+      <label for="location" class="block text-sm font-medium text-gray-700 mb-1">Business Location in Swansea</label>
+      <input type="text" id="location" name="location" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand" placeholder="e.g. SA1 Waterfront, Mumbles, Uplands" />
+    </div>
+    <button type="submit" class="bg-brand text-white px-6 py-3 rounded-lg hover:bg-brand-dark inline-block w-full sm:w-auto font-medium">Request Free Audit</button>
+    <p class="text-xs text-gray-500">We will only use your email to send the audit report. No spam, no mailing list.</p>
+  </form>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Want More Depth? Upgrade to a Full Audit</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">The free audit covers the essentials, but if you want a complete picture of your website's SEO performance, our <a href="/seo-audit-swansea/" class="text-brand hover:underline">full SEO audit</a> goes significantly deeper. The paid audit includes manual analysis by an SEO specialist, 16 months of Google Search Console data review, a full backlink profile analysis, competitor benchmarking against your top Swansea rivals, and a 30-minute strategy call to discuss findings and next steps.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Many Swansea businesses start with the free audit and upgrade to the full version once they see the value. There is no pressure to upgrade. The free audit stands on its own as a useful, actionable report. But if you want the level of detail that drives a serious SEO strategy, the full audit is the next step. Pricing starts from £500, with full details on our <a href="/seo-pricing-swansea/" class="text-brand hover:underline">pricing page</a>.</p>
+
+  <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 my-8 text-center">
+    <p class="text-lg font-semibold text-gray-900 mb-2">Not sure which audit you need?</p>
+    <p class="text-gray-700 mb-4">Start with the free audit. If the findings warrant deeper analysis, we will recommend the full version.</p>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="#form" class="bg-brand text-white px-6 py-3 rounded-lg hover:bg-brand-dark inline-block">Get Free Audit</a>
+      <a href="/contact/" class="border border-brand text-brand px-6 py-3 rounded-lg hover:bg-brand hover:text-white inline-block transition-colors">Ask a Question</a>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Frequently Asked Questions</h2>
+
+  <div class="space-y-2 mb-8">
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">Is the free SEO audit really free?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">Yes. There is no charge, no obligation, and no credit card required. We review your website and send you a report highlighting the key issues and opportunities. You decide what to do with it. There is no sales call unless you request one.</p>
+    </details>
+
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">How long does the free audit take to receive?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">You will receive your free SEO audit report within 2 working days of submitting the form. Most reports are delivered the same day or the next morning depending on when you submit your request.</p>
+    </details>
+
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">What information do I need to provide?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">Just your name, email address, website URL, and your business location in Swansea. We do not need access to your hosting, CMS, or any accounts. The free audit is based on what we can analyse from the public-facing version of your website.</p>
+    </details>
+
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">What is the difference between the free audit and the full paid audit?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">The free audit covers headline issues including site speed, mobile usability, on-page SEO basics, and local visibility signals. The full paid audit adds manual analysis by an SEO specialist, 16 months of Search Console data review, backlink profile analysis, competitor benchmarking, and a prioritised action plan with a walkthrough call. Visit our <a href="/seo-audit-swansea/" class="text-brand hover:underline">SEO audit page</a> for full details on the paid option.</p>
+    </details>
+
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">Can I use the free audit results to do SEO myself?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">Absolutely. The report includes specific, actionable recommendations that you or your developer can implement without hiring us. Many Swansea business owners use the free audit to handle the basics themselves and then come back to us for the more complex technical and strategic work.</p>
+    </details>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Related Pages</h2>
+
+  <ul class="text-gray-700 leading-relaxed mb-4 space-y-2">
+    <li><a href="/seo-audit-swansea/" class="text-brand hover:underline">Full SEO Audit</a> — comprehensive five-pillar analysis with competitor benchmarking and strategy call</li>
+    <li><a href="/services/" class="text-brand hover:underline">All Services</a> — the full range of SEO services we offer to Swansea businesses</li>
+    <li><a href="/seo-pricing-swansea/" class="text-brand hover:underline">SEO Pricing</a> — transparent pricing for audits, retainers, and one-off projects</li>
+    <li><a href="/contact/" class="text-brand hover:underline">Contact</a> — get in touch with a question or to discuss your SEO needs</li>
+  </ul>
+
+</Base>

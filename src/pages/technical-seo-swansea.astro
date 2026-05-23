@@ -1,0 +1,236 @@
+---
+import Base from '../layouts/Base.astro';
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://seoswansea.uk/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://seoswansea.uk/services/" },
+      { "@type": "ListItem", "position": 3, "name": "Technical SEO", "item": "https://seoswansea.uk/technical-seo-swansea/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Technical SEO Swansea | Site Speed & More",
+    "description": "Technical SEO services in Swansea covering site speed, crawlability, structured data, mobile optimisation, and security for local businesses across SA1 and Enterprise Park.",
+    "url": "https://seoswansea.uk/technical-seo-swansea/",
+    "publisher": { "@type": "Organization", "name": "SEO Swansea", "url": "https://seoswansea.uk" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long does a technical SEO audit take for a Swansea business?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A full technical SEO audit typically takes 5 to 10 working days depending on the size and complexity of your website. Small brochure sites with under 50 pages are usually completed within a week, while larger e-commerce sites or platforms with thousands of URLs may take up to two weeks for a thorough crawl, analysis, and prioritised report." }
+      },
+      {
+        "@type": "Question",
+        "name": "What Core Web Vitals scores should my Swansea website aim for?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Google recommends a Largest Contentful Paint under 2.5 seconds, a Cumulative Layout Shift below 0.1, and an Interaction to Next Paint under 200 milliseconds. These thresholds apply equally whether your customers are browsing from Mumbles on mobile data or from an office at SA1 Waterfront on fibre broadband." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does technical SEO affect local search rankings in Swansea?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Google uses page speed, mobile usability, HTTPS status, and structured data as ranking signals for local results. A Swansea business with a fast, mobile-friendly, properly indexed site will consistently outrank a competitor with the same content but poor technical foundations in the Swansea local pack and map results." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is structured data and why does my Swansea business need it?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Structured data is code added to your website that helps search engines understand your content. For Swansea businesses, LocalBusiness schema tells Google your address, opening hours, and service area. This can trigger rich results like star ratings, FAQs, and business details directly in search results, increasing your click-through rate." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does technical SEO cost in Swansea?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Technical SEO services in Swansea typically range from a one-off audit starting at around £500 to ongoing monthly retainers from £300 to £1,500 depending on the scope. Visit our pricing page for a full breakdown of packages suited to Swansea businesses of different sizes." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I do technical SEO myself or do I need an expert?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Basic technical SEO tasks like installing an SSL certificate or compressing images can be handled in-house. However, issues like crawl budget management, JavaScript rendering, canonical tag conflicts, and server-side performance tuning require specialist knowledge and tools. Most Swansea businesses benefit from at least an initial professional audit to identify and prioritise the issues that matter most." }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Technical SEO Swansea",
+    "provider": { "@type": "Organization", "name": "SEO Swansea", "url": "https://seoswansea.uk" },
+    "areaServed": { "@type": "City", "name": "Swansea" },
+    "serviceType": "Search Engine Optimisation",
+    "description": "Technical SEO services for Swansea businesses including site speed optimisation, crawlability fixes, structured data implementation, and Core Web Vitals improvement.",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "GBP",
+      "price": "500",
+      "priceSpecification": { "@type": "UnitPriceSpecification", "price": "500", "priceCurrency": "GBP", "unitText": "one-off audit" }
+    }
+  }
+];
+---
+
+<Base title="Technical SEO Swansea | Site Speed & More" description="Technical SEO services in Swansea covering site speed, crawlability, structured data, mobile optimisation, and security for businesses across SA1 and Enterprise Park." schema={schema}>
+
+  <nav class="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+    <a href="/" class="text-brand hover:underline">Home</a>
+    <span class="mx-1">/</span>
+    <a href="/services/" class="text-brand hover:underline">Services</a>
+    <span class="mx-1">/</span>
+    <span class="text-gray-700">Technical SEO</span>
+  </nav>
+
+  <h1 class="text-3xl font-bold text-brand mb-4">Technical SEO in Swansea</h1>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Technical SEO in Swansea is the process of optimising the underlying infrastructure of a website so that search engines can crawl, index, and rank it as effectively as possible. It covers everything from site speed and Core Web Vitals to crawlability, structured data, mobile usability, and HTTPS security. For Swansea businesses competing in local search results, strong technical foundations are the difference between appearing on page one and being invisible to potential customers across the SA1 Waterfront, Enterprise Park, and the wider Swansea Bay area.</p>
+
+  <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg my-6">
+    <p class="font-medium text-gray-900 mb-1">Quick Answer</p>
+    <p class="text-gray-700">Technical SEO ensures search engines can access, understand, and rank your website. It includes fixing site speed, crawl errors, broken links, missing structured data, and mobile usability issues. For Swansea businesses, it is the fastest way to improve visibility in Google's local results without creating new content.</p>
+  </div>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Many Swansea business owners invest in content and link building without realising that technical problems are silently undermining their rankings. A slow-loading page on mobile, a blocked robots.txt directive, or a missing canonical tag can prevent Google from properly indexing your most important pages. Technical SEO identifies and resolves these hidden issues so that every other aspect of your SEO strategy can deliver results.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Whether you run a professional services firm at Technium Innovation Centre, an e-commerce operation from Enterprise Park in Llansamlet, or a hospitality business on Wind Street, your website's technical health directly affects how many local customers find you through search. This page explains each pillar of technical SEO and how we apply it to Swansea websites.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">What Is Technical SEO?</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Technical SEO refers to the optimisations made to a website's architecture, server configuration, and code that help search engines discover and interpret content. Unlike on-page SEO, which deals with the words and images visible to users, technical SEO operates behind the scenes. It ensures that when Googlebot visits your Swansea business website, it can access every important page, understand the relationships between pages, and process the content quickly enough to rank it competitively.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">The core pillars of technical SEO include site speed, crawlability and indexation, structured data, mobile optimisation, and security. Each pillar contributes to how search engines evaluate your site's quality and trustworthiness. Neglecting any one of them creates a bottleneck that limits the performance of everything else you do in SEO, from writing blog posts to earning backlinks from local Swansea directories.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">For most Swansea businesses, technical SEO is not a one-time task. Websites evolve, CMS platforms release updates, Google changes its algorithm, and new pages are added. Regular technical audits catch problems before they compound and ensure your site maintains its competitive position in local search results.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Site Speed and Core Web Vitals</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Site speed is one of the most important technical SEO factors because it directly affects both user experience and search rankings. Google has used page speed as a ranking signal since 2010, and the introduction of Core Web Vitals in 2021 made it even more significant. For Swansea businesses, a slow website means lost customers. Research consistently shows that over half of mobile users abandon a page that takes more than three seconds to load.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Core Web Vitals consist of three metrics that Google uses to measure real-world user experience. Largest Contentful Paint measures how quickly the main content of a page becomes visible and should be under 2.5 seconds. Cumulative Layout Shift measures visual stability, tracking how much page elements shift during loading, and should stay below 0.1. Interaction to Next Paint measures responsiveness when a user clicks or taps something and should be under 200 milliseconds.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Common speed issues we find on Swansea business websites include uncompressed images, render-blocking JavaScript, excessive third-party scripts from booking widgets or analytics tools, slow server response times from budget hosting, and no browser caching configured. Each of these problems is solvable. Image compression alone often cuts page load time by 40 to 60 percent on image-heavy sites like restaurants, hotels, and property businesses around Swansea Bay.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">How We Improve Site Speed</h3>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Our speed optimisation process begins with a full audit using Google PageSpeed Insights, Lighthouse, and WebPageTest to measure current performance against Core Web Vitals thresholds. We then prioritise fixes by impact. Typical improvements include converting images to modern formats like WebP or AVIF, implementing lazy loading for below-the-fold content, minifying CSS and JavaScript, enabling server-level compression with Brotli or Gzip, and configuring proper cache headers. For sites on WordPress or Shopify, we also audit installed plugins and apps because each one adds JavaScript that slows your pages.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Crawlability and Indexation</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Crawlability determines whether search engines can discover and access every important page on your website. Indexation determines whether those pages are stored in Google's index and eligible to appear in search results. If a page cannot be crawled, it cannot be indexed. If it cannot be indexed, it will never rank, regardless of how well-written the content is.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">The most common crawlability problems we encounter on Swansea business websites include misconfigured robots.txt files that accidentally block important directories, noindex tags left on pages after a site migration or redesign, orphan pages with no internal links pointing to them, infinite crawl traps created by faceted navigation or calendar widgets, and XML sitemaps that are outdated, contain broken URLs, or are not submitted to Google Search Console.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">For larger Swansea websites, particularly e-commerce sites or directories with hundreds or thousands of pages, crawl budget becomes a factor. Google allocates a limited number of pages it will crawl on each visit. If your crawl budget is wasted on duplicate pages, parameterised URLs, or thin content pages, your most important commercial pages may not be crawled frequently enough to reflect updates or compete effectively.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">XML Sitemaps and Robots.txt</h3>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Every Swansea business website should have a properly formatted XML sitemap submitted to both Google Search Console and Bing Webmaster Tools. The sitemap should only include canonical, indexable URLs that return a 200 status code. Your robots.txt file should allow access to all important content while blocking crawling of admin areas, search results pages, and other low-value paths. We audit both files as part of every <a href="/seo-audit-swansea/" class="text-brand hover:underline">SEO audit</a> and fix any misconfigurations that are limiting your visibility.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Structured Data and Schema Markup</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Structured data is code written in JSON-LD format that you add to your website to help search engines understand the meaning and context of your content. For Swansea businesses, the most valuable schema types include LocalBusiness, which tells Google your business name, address, phone number, opening hours, and service area. When implemented correctly, structured data can trigger rich results in search, displaying star ratings, FAQ dropdowns, pricing information, and event details directly on the results page.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Rich results dramatically increase click-through rates. A search listing with star ratings and FAQ accordions occupies more visual space and attracts more attention than a plain blue link. For competitive Swansea search terms like "plumber Swansea" or "solicitor Swansea," the business with rich results consistently wins more clicks even if it ranks slightly lower than a competitor without them.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Beyond LocalBusiness, we implement Service schema for each service you offer, FAQPage schema for frequently asked questions, BreadcrumbList schema for clear navigation signals, Review and AggregateRating schema for customer testimonials, and Event schema for businesses that run workshops, classes, or events in the Swansea area. Each schema type is validated using Google's Rich Results Test before deployment to ensure it meets current specifications.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Mobile Optimisation</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Google uses mobile-first indexing, which means the mobile version of your website is the primary version that Google crawls and ranks. If your Swansea business website looks and performs well on desktop but is difficult to use on a smartphone, your rankings will suffer across all devices. Mobile optimisation is no longer optional. Over 60 percent of all searches in the UK are now conducted on mobile devices, and for local searches like "restaurant near me" or "electrician Swansea," the mobile share is even higher.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Mobile optimisation goes beyond responsive design. It includes ensuring tap targets are large enough to be pressed accurately on a touchscreen, text is readable without zooming, horizontal scrolling is eliminated, pop-ups and interstitials do not block content, and forms are easy to complete on a small screen. We test on real devices across different screen sizes and network speeds, not just in Chrome DevTools, because real-world mobile performance in areas like Mumbles, Gorseinon, and Llansamlet varies depending on network coverage.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">We also check that mobile and desktop versions of your site serve the same content. Some older Swansea websites use separate mobile subdomains or dynamically serve different content to mobile users. This causes indexation issues because Google may see different content depending on which version it crawls. The solution is a single responsive website that adapts to all screen sizes while serving identical content and structured data.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">HTTPS and Security</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">HTTPS has been a Google ranking signal since 2014, and modern browsers display prominent "Not Secure" warnings on any page served over HTTP. For Swansea businesses that collect personal data through contact forms, booking systems, or e-commerce checkouts, HTTPS is also a legal requirement under UK GDPR. An SSL certificate encrypts data between your website and your visitors, protecting sensitive information from interception.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Common security issues we find during technical audits include expired or improperly configured SSL certificates, mixed content warnings where HTTPS pages load some resources over HTTP, missing security headers like Content-Security-Policy and X-Frame-Options, outdated CMS versions with known vulnerabilities, and weak password policies on WordPress admin panels. Each of these creates both a security risk and a potential ranking penalty.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">We ensure your SSL certificate is correctly installed, all internal links and resources use HTTPS, HTTP-to-HTTPS redirects are properly configured with 301 status codes, and recommended security headers are in place. For WordPress sites, we also check that the admin area is protected and that all plugins and themes are up to date.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Technical SEO for Swansea Enterprise Park and SA1 Businesses</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Swansea's commercial districts each present distinct local SEO opportunities. Enterprise Park in Llansamlet is home to trade, logistics, and manufacturing businesses that serve customers across South Wales. SA1 Waterfront hosts professional services, technology companies, and creative agencies. Bay Campus supports university spin-offs and research-driven businesses. Technium Innovation Centre nurtures startups and scale-ups in sectors from fintech to health technology.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">For businesses in these areas, technical SEO is particularly important because their websites often compete against national brands and directories in search results. A solicitor at SA1 is competing not just with other Swansea solicitors but with aggregator sites like Yell, Bark, and Checkatrade. Strong technical foundations, especially structured data with accurate NAP information, fast page speeds, and proper local schema, give independent Swansea businesses the best chance of outranking these aggregators for local intent queries.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">We tailor technical SEO strategies to your specific location and industry. An e-commerce business at Enterprise Park needs different technical optimisation than a consultancy firm at SA1. We consider your server infrastructure, CMS platform, number of pages, target audience, and geographic service area when building your technical SEO plan. The goal is always to remove the technical barriers that prevent your best content from ranking where it should in Swansea's local search results.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">How We Run a Technical SEO Audit</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Our technical SEO audit process follows a structured methodology designed to identify every issue affecting your website's search performance. We use a combination of industry-standard tools and manual review to ensure nothing is missed. The audit produces a prioritised action plan so you know exactly what to fix first for the greatest ranking impact.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Step 1: Full Site Crawl</h3>
+  <p class="text-gray-700 leading-relaxed mb-4">We run a comprehensive crawl of your entire website using Screaming Frog, replicating how Googlebot accesses your pages. This identifies broken links, redirect chains, duplicate content, missing meta tags, orphan pages, and crawl depth issues. For larger Swansea websites, we compare the crawl results against your XML sitemap and Google Search Console data to find discrepancies between what you want indexed and what Google actually sees.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Step 2: Core Web Vitals and Speed Analysis</h3>
+  <p class="text-gray-700 leading-relaxed mb-4">We test your key landing pages against Google's Core Web Vitals thresholds using both lab data from Lighthouse and real-user data from the Chrome User Experience Report. This reveals whether your pages pass or fail on LCP, CLS, and INP across mobile and desktop. We identify the specific resources, scripts, and layout elements causing poor scores and document the exact fixes needed.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Step 3: Indexation Review</h3>
+  <p class="text-gray-700 leading-relaxed mb-4">We audit your Google Search Console coverage report to identify pages that are crawled but not indexed, pages excluded by robots.txt or noindex tags, duplicate pages Google has chosen to ignore, and soft 404 errors. We cross-reference this with your sitemap to ensure every important page is being submitted and indexed correctly.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Step 4: Structured Data Validation</h3>
+  <p class="text-gray-700 leading-relaxed mb-4">We test every page for existing structured data using Google's Rich Results Test and Schema.org validator. We identify missing schema opportunities, fix validation errors, and recommend additional schema types that could trigger rich results for your Swansea business in search.</p>
+
+  <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Step 5: Prioritised Action Plan</h3>
+  <p class="text-gray-700 leading-relaxed mb-4">The audit concludes with a clear, prioritised report. Each issue is categorised as critical, high, medium, or low priority based on its impact on rankings and the effort required to fix it. Critical issues like blocked pages, broken redirects, or failing Core Web Vitals are flagged for immediate attention. You receive a full written report, a spreadsheet of all issues, and a 30-minute walkthrough call to discuss the findings and next steps.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">If you want a quick overview of your site's health before committing to a full audit, start with our <a href="/free-seo-audit-swansea/" class="text-brand hover:underline">free SEO audit</a>. It covers the headline issues and gives you a clear picture of where your website stands. For full audit pricing, see our <a href="/seo-pricing-swansea/" class="text-brand hover:underline">SEO pricing page</a>.</p>
+
+  <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 my-8 text-center">
+    <p class="text-lg font-semibold text-gray-900 mb-2">Ready to fix the technical issues holding your Swansea website back?</p>
+    <p class="text-gray-700 mb-4">Get a free technical SEO review and find out what's preventing your site from ranking.</p>
+    <a href="/free-seo-audit-swansea/" class="bg-brand text-white px-6 py-3 rounded-lg hover:bg-brand-dark inline-block">Get Your Free Audit</a>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Frequently Asked Questions</h2>
+
+  <div class="space-y-2 mb-8">
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">How long does a technical SEO audit take for a Swansea business?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">A full technical SEO audit typically takes 5 to 10 working days depending on the size and complexity of your website. Small brochure sites with under 50 pages are usually completed within a week, while larger e-commerce sites or platforms with thousands of URLs may take up to two weeks for a thorough crawl, analysis, and prioritised report.</p>
+    </details>
+
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">What Core Web Vitals scores should my Swansea website aim for?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">Google recommends a Largest Contentful Paint under 2.5 seconds, a Cumulative Layout Shift below 0.1, and an Interaction to Next Paint under 200 milliseconds. These thresholds apply equally whether your customers are browsing from Mumbles on mobile data or from an office at SA1 Waterfront on fibre broadband.</p>
+    </details>
+
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">Does technical SEO affect local search rankings in Swansea?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">Yes. Google uses page speed, mobile usability, HTTPS status, and structured data as ranking signals for local results. A Swansea business with a fast, mobile-friendly, properly indexed site will consistently outrank a competitor with the same content but poor technical foundations in the Swansea local pack and map results.</p>
+    </details>
+
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">What is structured data and why does my Swansea business need it?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">Structured data is code added to your website that helps search engines understand your content. For Swansea businesses, LocalBusiness schema tells Google your address, opening hours, and service area. This can trigger rich results like star ratings, FAQs, and business details directly in search results, increasing your click-through rate.</p>
+    </details>
+
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">How much does technical SEO cost in Swansea?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">Technical SEO services in Swansea typically range from a one-off audit starting at around £500 to ongoing monthly retainers from £300 to £1,500 depending on the scope. Visit our <a href="/seo-pricing-swansea/" class="text-brand hover:underline">pricing page</a> for a full breakdown of packages suited to Swansea businesses of different sizes.</p>
+    </details>
+
+    <details class="border border-gray-200 rounded-lg p-4">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2">Can I do technical SEO myself or do I need an expert?</summary>
+      <p class="text-gray-700 leading-relaxed mt-2">Basic technical SEO tasks like installing an SSL certificate or compressing images can be handled in-house. However, issues like crawl budget management, JavaScript rendering, canonical tag conflicts, and server-side performance tuning require specialist knowledge and tools. Most Swansea businesses benefit from at least an initial professional audit to identify and prioritise the issues that matter most.</p>
+    </details>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Related Services</h2>
+
+  <ul class="text-gray-700 leading-relaxed mb-4 space-y-2">
+    <li><a href="/seo-audit-swansea/" class="text-brand hover:underline">Full SEO Audit</a> — comprehensive analysis covering technical, on-page, off-page, and local SEO factors</li>
+    <li><a href="/free-seo-audit-swansea/" class="text-brand hover:underline">Free SEO Audit</a> — a quick health check to identify your site's biggest opportunities</li>
+    <li><a href="/ai-search-optimisation-swansea/" class="text-brand hover:underline">AI Search Optimisation</a> — preparing your Swansea business for AI-powered search engines</li>
+    <li><a href="/case-studies/" class="text-brand hover:underline">Case Studies</a> — results we have delivered for Swansea and South Wales businesses</li>
+    <li><a href="/seo-pricing-swansea/" class="text-brand hover:underline">SEO Pricing</a> — transparent pricing for all our Swansea SEO services</li>
+  </ul>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Have questions about technical SEO for your Swansea business? <a href="/contact/" class="text-brand hover:underline">Get in touch</a> and we will give you a straight answer about what your website needs.</p>
+
+</Base>

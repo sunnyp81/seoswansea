@@ -1,0 +1,129 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://seoswansea.uk/" },
+      { "@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://seoswansea.uk/case-studies/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "SEO Case Studies Swansea | Real Results",
+    "description": "Real SEO case studies from Swansea businesses showing measurable growth in rankings, traffic, and leads across Mumbles, Morriston, and SA1.",
+    "url": "https://seoswansea.uk/case-studies/",
+    "publisher": { "@type": "Organization", "name": "SEO Swansea", "url": "https://seoswansea.uk" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long does it take to see SEO results in Swansea?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most Swansea businesses see measurable improvements within 3 to 6 months. Local SEO campaigns targeting Google Maps and the local pack often show results faster, typically within 8 to 12 weeks, because local competition in areas like Mumbles and Morriston is lower than national SERPs." }
+      },
+      {
+        "@type": "Question",
+        "name": "What kind of results can a Swansea business expect from SEO?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Typical outcomes include higher Google Maps visibility, increased organic traffic from location-specific searches, and more phone calls or form submissions. Restaurants and hospitality businesses often see 200 to 400 percent increases in Maps impressions, while trades businesses commonly gain 15 to 25 new monthly leads after a 6-month campaign." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is SEO worth it for small businesses in Swansea?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Swansea has a concentrated local market where ranking in the top 3 for area-specific terms delivers a disproportionate share of clicks. A plumber ranking first for plumber morriston or a restaurant in the local pack for restaurant mumbles captures leads that would otherwise go to directories or national aggregators." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you guarantee SEO rankings?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No ethical SEO provider guarantees specific positions because Google controls its algorithm. What we do guarantee is a transparent, data-driven process with monthly reporting. Our case studies show consistent patterns of growth when the strategy is executed correctly over a sustained period." }
+      }
+    ]
+  }
+];
+---
+<Base title="SEO Case Studies Swansea | Real Results" description="Real SEO case studies from Swansea businesses showing measurable growth in rankings, traffic, and leads across Mumbles, Morriston, and SA1 Waterfront areas." schema={schema}>
+
+  <h1 class="text-3xl font-bold text-brand mb-4">SEO Case Studies — Swansea Results</h1>
+
+  <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg my-6">
+    <p class="font-semibold text-gray-900 mb-1">Quick Answer</p>
+    <p class="text-gray-700">These case studies show how Swansea businesses achieved measurable SEO results: a Mumbles restaurant gained 340% more Google Maps visibility in 3 months, and a Morriston trades business went from zero online presence to 20 new leads per month within 6 months.</p>
+  </div>
+
+  <p class="text-gray-700 leading-relaxed mb-4">SEO Swansea case studies show what happens when local businesses invest in search visibility. Every campaign featured here follows the same core process: audit the current state, fix technical foundations, build local authority, and track outcomes against revenue. The businesses span hospitality and trades, two of the most competitive local sectors in Swansea, and the results reflect what disciplined execution looks like in a Welsh market where most competitors still rely on word of mouth or outdated websites.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Swansea sits at the intersection of urban demand and tight-knit local communities. From the seafood restaurants along Mumbles Road to the heating engineers serving Morriston and Llansamlet, the search landscape rewards businesses that show up with accurate information, strong reviews, and content that matches how local people actually search. These case studies document that process from start to finish.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Featured Case Studies</h2>
+
+  <div class="border border-gray-200 rounded-lg p-6 mb-6 hover:shadow-md transition-shadow">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3"><a href="/case-studies/mumbles-restaurant-google-maps/" class="text-brand hover:underline">Mumbles Restaurant — Google Maps SEO</a></h3>
+    <p class="text-gray-700 leading-relaxed mb-4">A seafood restaurant on Mumbles Road was invisible in the Google Maps local pack despite strong food and loyal regulars. After a 3-month local SEO campaign covering Google Business Profile optimisation, review strategy, and menu structured data, the restaurant achieved a 340% increase in Maps visibility and 50 additional covers per month. The campaign targeted high-intent terms like "restaurant mumbles" and "seafood swansea bay."</p>
+    <div class="flex gap-6 mb-3">
+      <div><span class="text-3xl font-bold text-brand">340%</span><br><span class="text-sm text-gray-500">Maps visibility increase</span></div>
+      <div><span class="text-3xl font-bold text-brand">50</span><br><span class="text-sm text-gray-500">Extra covers/month</span></div>
+      <div><span class="text-3xl font-bold text-brand">3</span><br><span class="text-sm text-gray-500">Months to results</span></div>
+    </div>
+    <a href="/case-studies/mumbles-restaurant-google-maps/" class="text-brand hover:underline text-sm font-medium">Read the full case study &rarr;</a>
+  </div>
+
+  <div class="border border-gray-200 rounded-lg p-6 mb-6 hover:shadow-md transition-shadow">
+    <h3 class="text-xl font-semibold text-gray-800 mb-3"><a href="/case-studies/morriston-trades-business-organic/" class="text-brand hover:underline">Morriston Trades Business — Organic SEO</a></h3>
+    <p class="text-gray-700 leading-relaxed mb-4">A plumbing and heating company near Morriston Hospital had no website and relied entirely on word of mouth. Over 6 months, a full organic SEO campaign including a new website, service area pages for Morriston, Sketty, Uplands, and SA1, and Google Business Profile setup delivered 20 new leads per month and page 1 rankings for competitive terms like "plumber morriston" and "boiler repair swansea."</p>
+    <div class="flex gap-6 mb-3">
+      <div><span class="text-3xl font-bold text-brand">450%</span><br><span class="text-sm text-gray-500">Organic traffic growth</span></div>
+      <div><span class="text-3xl font-bold text-brand">20</span><br><span class="text-sm text-gray-500">New leads/month</span></div>
+      <div><span class="text-3xl font-bold text-brand">6</span><br><span class="text-sm text-gray-500">Months to full results</span></div>
+    </div>
+    <a href="/case-studies/morriston-trades-business-organic/" class="text-brand hover:underline text-sm font-medium">Read the full case study &rarr;</a>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">What SEO Results Look Like for Swansea Businesses</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Results vary by industry, competition level, and starting point, but Swansea businesses share common patterns when SEO is done properly. The local search market in SA1 Waterfront, Mumbles, and Morriston is competitive enough to reward good work but not so saturated that small businesses cannot break through. This is the sweet spot for local SEO.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">For hospitality businesses along Swansea Bay, Google Maps dominance is the primary goal. Tourists searching "restaurant near me" while walking the promenade or visiting Mumbles Pier will only see the top 3 results in the local pack. Ranking there means direct footfall. For trades businesses operating across Morriston, Llansamlet, and the wider SA postcode area, the goal shifts to organic rankings for service-plus-location queries that generate phone calls and quote requests.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Both case studies demonstrate the same underlying principle: local SEO compounds. Month 1 builds foundations. Month 2 shows early movement. By month 3 to 6, the business occupies positions that generate consistent, measurable revenue. The investment pays for itself many times over because organic traffic does not stop when you pause the ad spend.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Why Swansea Businesses Choose Local SEO</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Paid advertising works for immediate visibility, but it disappears the moment the budget runs out. SEO builds a durable asset. A Mumbles restaurant that ranks in the local pack keeps appearing for every "restaurant mumbles" search without paying per click. A Morriston plumber on page 1 for "boiler repair swansea" receives leads 24 hours a day, 365 days a year.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">The Swansea market is particularly well-suited to local SEO because of its geography. The city is compact enough that service area businesses can dominate multiple neighbourhoods from a single location, but large enough that search volume justifies the investment. Areas like SA1 Waterfront, Sketty, Uplands, and Gorseinon each have distinct search behaviour that a well-structured local SEO campaign can capture systematically.</p>
+
+  <p class="text-gray-700 leading-relaxed mb-4">Our <a href="/services/" class="text-brand hover:underline">SEO services</a> are built specifically for this market. Every campaign starts with a <a href="/free-seo-audit-swansea/" class="text-brand hover:underline">free SEO audit</a> that benchmarks your current visibility and identifies the fastest path to results. Transparent <a href="/seo-pricing-swansea/" class="text-brand hover:underline">pricing</a> means no surprises, and monthly reporting keeps you informed at every stage.</p>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Frequently Asked Questions</h2>
+
+  <div class="space-y-2 mb-8">
+    <details class="border border-gray-200 rounded-lg">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2 px-4">How long does it take to see SEO results in Swansea?</summary>
+      <div class="px-4 pb-4 text-gray-700 leading-relaxed">Most Swansea businesses see measurable improvements within 3 to 6 months. Local SEO campaigns targeting Google Maps and the local pack often show results faster, typically within 8 to 12 weeks, because local competition in areas like Mumbles and Morriston is lower than national SERPs. The timeline depends on your starting point, the competitiveness of your target terms, and the current state of your website and Google Business Profile.</div>
+    </details>
+    <details class="border border-gray-200 rounded-lg">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2 px-4">What kind of results can a Swansea business expect from SEO?</summary>
+      <div class="px-4 pb-4 text-gray-700 leading-relaxed">Typical outcomes include higher Google Maps visibility, increased organic traffic from location-specific searches, and more phone calls or form submissions. Restaurants and hospitality businesses often see 200 to 400 percent increases in Maps impressions, while trades businesses commonly gain 15 to 25 new monthly leads after a 6-month campaign. Results are tracked through Google Search Console, Google Analytics, and call tracking so every metric is verifiable.</div>
+    </details>
+    <details class="border border-gray-200 rounded-lg">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2 px-4">Is SEO worth it for small businesses in Swansea?</summary>
+      <div class="px-4 pb-4 text-gray-700 leading-relaxed">Yes. Swansea has a concentrated local market where ranking in the top 3 for area-specific terms delivers a disproportionate share of clicks. A plumber ranking first for "plumber morriston" or a restaurant in the local pack for "restaurant mumbles" captures leads that would otherwise go to directories or national aggregators. The return on investment for local SEO consistently outperforms paid advertising for businesses serving a defined geographic area.</div>
+    </details>
+    <details class="border border-gray-200 rounded-lg">
+      <summary class="cursor-pointer font-medium text-gray-900 py-2 px-4">Do you guarantee SEO rankings?</summary>
+      <div class="px-4 pb-4 text-gray-700 leading-relaxed">No ethical SEO provider guarantees specific positions because Google controls its algorithm. What we do guarantee is a transparent, data-driven process with monthly reporting. Our case studies show consistent patterns of growth when the strategy is executed correctly over a sustained period. If an agency promises you a number 1 ranking, that is a red flag. We focus on building sustainable visibility that generates real business outcomes.</div>
+    </details>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Ready to Become the Next Case Study?</h2>
+
+  <p class="text-gray-700 leading-relaxed mb-6">Every case study on this page started with a conversation about where the business was and where it wanted to be. If you run a business in Swansea and you are not showing up where your customers are searching, that gap is costing you money every day. Start with a free audit and find out exactly what is holding you back.</p>
+
+  <a href="/contact/" class="bg-brand text-white px-6 py-3 rounded-lg hover:bg-brand-dark inline-block">Get Your Free SEO Audit</a>
+
+</Base>
