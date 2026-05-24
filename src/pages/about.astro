@@ -1,32 +1,32 @@
 ---
 import Base from '../layouts/Base.astro';
 
-const metaDescription = "Sunny Patel runs SEO Swansea, a local search consultancy serving Swansea and South Wales with technical SEO, content strategy, and AI search.";
+const metaDescription = "Bay SEO Studio is a small, hands-on SEO team in Swansea. We help local businesses grow through technical SEO, content strategy, and AI search optimisation.";
 
 const faqItems = [
   {
-    q: "Who is Sunny Patel?",
-    a: "Sunny Patel is an SEO consultant who runs SEO Swansea and sunnypatel.co.uk. He manages a portfolio of over 40 websites across competitive niches and provides local SEO, technical SEO, content strategy, and AI search optimisation services to businesses across Swansea and South Wales."
+    q: "What exactly is Bay SEO Studio?",
+    a: "We are a small SEO team based in Swansea, focused on helping local businesses get found online. We handle everything from technical audits to content strategy and AI search optimisation. Think of us as your in-house SEO department, without the overhead of hiring full-time staff."
   },
   {
-    q: "Is SEO Swansea an agency or a solo consultancy?",
-    a: "SEO Swansea is a solo consultancy run by Sunny Patel. You work directly with the person doing the work. There are no juniors, account managers, or outsourced teams between you and your SEO strategy. This means faster communication, more accountability, and a consistent standard of work on every project."
+    q: "Do you meet clients face to face in Swansea?",
+    a: "Absolutely. We work remote-first across the UK, but we are always happy to meet in person around Swansea. Plenty of our clients prefer an initial sit-down over coffee followed by remote collaboration for the ongoing work. Video calls, screen shares, and monthly reports keep everything transparent either way."
   },
   {
-    q: "Do you meet clients in person in Swansea?",
-    a: "Yes. While the consultancy operates remote-first across the UK, Sunny is available for face-to-face meetings in Swansea and the surrounding area. Many clients prefer an initial in-person consultation followed by remote collaboration for ongoing work. Video calls, screen shares, and monthly reporting keep everything transparent without requiring constant travel."
+    q: "Which industries do you work with?",
+    a: "We work across a wide range of sectors including tourism and hospitality, healthcare, education, professional services, trades, and tech. Every industry has its own quirks when it comes to search. Our experience across multiple niches means we can spot opportunities that a single-sector specialist might miss."
   },
   {
-    q: "What industries do you specialise in?",
-    a: "SEO Swansea works across a range of industries including tourism and hospitality, healthcare, education, professional services, trades, and technology. Each industry has unique search patterns and compliance requirements. Experience across multiple sectors means we apply proven strategies from one niche to unlock opportunities in another."
+    q: "How is Bay SEO Studio different from a big agency in Cardiff or London?",
+    a: "Big agencies charge premium retainers and often hand your account to a junior. With us, you deal directly with the people doing the work. We know the difference between search behaviour in Mumbles and Morriston, which local directories actually matter, and how Swansea's seasonal tourism economy shapes search demand. That local knowledge, combined with senior-level skills at fair rates, is hard to find at a large agency."
   },
   {
-    q: "How is SEO Swansea different from agencies in Cardiff or London?",
-    a: "Large agencies charge premium rates and often assign junior staff to local accounts. SEO Swansea offers senior-level expertise at consultancy rates, with genuine understanding of the Swansea market. We know the difference between search behaviour in Mumbles and Morriston, which directories matter locally, and how Swansea's seasonal tourism economy affects search demand."
+    q: "Can I see examples of your work?",
+    a: "Yes. Head over to our case studies page at /case-studies/ for real examples of SEO campaigns we have delivered. Each one covers the challenge, the strategy, and the measurable results we achieved through organic search."
   },
   {
-    q: "Can I see examples of your SEO work?",
-    a: "Yes. Visit our case studies page at /case-studies/ for examples of SEO campaigns we have delivered for businesses across different industries. Each case study includes the challenge, the strategy, and the measurable results achieved through organic search optimisation."
+    q: "What if I am not sure whether I need SEO?",
+    a: "That is a perfectly normal starting point. Drop us a line and we will have an honest chat about whether SEO makes sense for your business right now. We offer a free audit with every enquiry, so you can see exactly where you stand before deciding anything. No pressure, no hard sell."
   }
 ];
 
@@ -52,7 +52,7 @@ const schema = [
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "About SEO Swansea | Sunny Patel, SEO Pro",
+    "name": "About Bay SEO Studio | Swansea SEO",
     "url": "https://seoswansea.uk/about/",
     "description": metaDescription
   },
@@ -70,133 +70,105 @@ const schema = [
   },
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Sunny Patel",
-    "url": "https://sunnypatel.co.uk",
-    "jobTitle": "SEO Consultant",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "SEO Swansea",
-      "url": "https://seoswansea.uk"
-    },
-    "sameAs": ["https://sunnypatel.co.uk"],
-    "knowsAbout": [
-      "Search Engine Optimisation",
-      "Local SEO",
-      "Technical SEO",
-      "AI Search Optimisation",
-      "Content Strategy"
-    ]
-  },
-  {
-    "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "SEO Swansea",
+    "name": "Bay SEO Studio",
     "url": "https://seoswansea.uk",
-    "founder": {
-      "@type": "Person",
-      "name": "Sunny Patel",
-      "url": "https://sunnypatel.co.uk"
-    },
-    "email": "2012.infinite@gmail.com",
-    "sameAs": ["https://sunnypatel.co.uk"]
+    "email": "hello@seoswansea.uk",
+    "sameAs": []
   }
 ];
 ---
 
-<Base title="About SEO Swansea | Sunny Patel, SEO Pro" description={metaDescription} schema={schema}>
+<Base title="About Bay SEO Studio | Swansea SEO" description={metaDescription} schema={schema}>
 
   <article class="space-y-12">
 
     <header>
-      <h1 class="text-3xl font-bold text-brand mb-4">About SEO Swansea — Sunny Patel</h1>
+      <h1 class="text-3xl font-heading font-bold text-brand mb-4">About Bay SEO Studio</h1>
     </header>
 
     <section class="space-y-4">
       <p class="text-gray-700 leading-relaxed mb-4">
-        SEO Swansea is run by Sunny Patel, an SEO consultant with years of experience in technical SEO, content strategy, and local search optimisation. The consultancy operates remote-first across the UK with deep coverage of Swansea and South Wales, helping local businesses rank higher on Google and grow revenue through organic search. Sunny also runs <a href="https://sunnypatel.co.uk" class="text-brand hover:underline" rel="noopener">sunnypatel.co.uk</a>, where he publishes SEO insights and manages a portfolio of over 40 websites across competitive niches.
+        Bay SEO Studio is a small, hands-on SEO team rooted in Swansea. We help local businesses show up where it matters most: in the search results their customers are actually using. Whether that is Google, Bing, or the growing wave of AI-powered search tools like ChatGPT and Copilot, we make sure your business gets found.
       </p>
       <p class="text-gray-700 leading-relaxed mb-4">
-        This is not a faceless agency. When you hire SEO Swansea, you work directly with Sunny. There is no account manager relaying your messages to a junior team member. There are no outsourced contractors working on your website without your knowledge. Every audit, every technical fix, every piece of content strategy comes from the same person who takes your phone call.
+        We are not a faceless agency churning through client accounts on a conveyor belt. When you work with us, you deal directly with the people doing the work. No account managers relaying your messages. No outsourced contractors making changes without your knowledge. Just a straightforward relationship with a team that genuinely cares about getting your business more customers through search.
       </p>
     </section>
 
-    <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg my-6">
-      <p class="font-semibold text-amber-900 mb-1">Quick Answer</p>
-      <p class="text-amber-800">
-        SEO Swansea is a solo SEO consultancy run by Sunny Patel, offering technical SEO, local SEO, content strategy, and AI search optimisation to Swansea and South Wales businesses. <a href="/free-seo-audit-swansea/" class="text-brand hover:underline font-medium">Request a free audit</a> or <a href="/contact/" class="text-brand hover:underline font-medium">get in touch</a> to discuss your project.
+    <div class="bg-teal-50 border-l-4 border-teal-500 p-4 rounded-r-lg my-6">
+      <p class="font-semibold text-teal-900 mb-1">Quick Answer</p>
+      <p class="text-teal-800">
+        Bay SEO Studio is a small Swansea-based SEO team offering technical SEO, local SEO, content strategy, and AI search optimisation for businesses across Swansea and South Wales. <a href="/free-seo-audit-swansea/" class="text-brand hover:underline font-medium">Grab a free audit</a> or <a href="/contact/" class="text-brand hover:underline font-medium">have a chat with us</a> to get started.
       </p>
     </div>
 
     <section class="space-y-4">
-      <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Who Is Sunny Patel</h2>
+      <h2 class="text-2xl font-heading font-semibold text-gray-900 mt-12 mb-4">Who We Are</h2>
       <p class="text-gray-700 leading-relaxed mb-4">
-        Sunny is a hands-on SEO practitioner, not a strategist who delegates execution. He builds websites, audits technical infrastructure, writes content strategies, implements structured data, and monitors search performance across every site in his portfolio. This direct involvement means he encounters and solves the same technical problems your business faces, week after week, across dozens of different industries and content management systems.
+        We are a team of SEO practitioners. That means we do not just talk strategy and hand you a PDF. We build websites, audit technical infrastructure, write content strategies, implement structured data, and monitor search performance across every site we manage. This hands-on approach means we encounter and solve the same technical problems your business faces, week after week, across dozens of different industries and platforms.
       </p>
       <p class="text-gray-700 leading-relaxed mb-4">
-        His experience spans the full breadth of modern search marketing. On the technical side, he handles site speed optimisation, Core Web Vitals remediation, crawl budget management, structured data implementation, and server configuration. On the content side, he develops topical authority strategies, conducts semantic keyword research, and creates content architectures designed to dominate specific search verticals. On the local SEO front, he optimises Google Business Profiles, builds citation networks, and implements geo-targeted schema markup.
+        Between us, we manage a portfolio of over 40 websites across competitive niches. That gives us something most consultants cannot offer: real-time pattern recognition. When Google rolls out a core update, we see the impact across dozens of sites simultaneously. We know what works and what does not because we have the data to prove it, not because we read about it on a blog.
       </p>
       <p class="text-gray-700 leading-relaxed mb-4">
-        More recently, Sunny has developed deep expertise in AI search optimisation. As tools like Google AI Overviews, ChatGPT, Microsoft Copilot, and Perplexity reshape how consumers discover businesses, he helps clients prepare their websites to be cited and surfaced by these AI-powered search platforms. This forward-looking capability is increasingly important for Swansea businesses competing for visibility in a search landscape that is evolving rapidly.
-      </p>
-      <p class="text-gray-700 leading-relaxed mb-4">
-        Managing a portfolio of over 40 websites provides an unusual advantage. Sunny sees the impact of Google algorithm updates across dozens of sites simultaneously, allowing him to identify patterns faster and respond with tested strategies rather than speculation. When Google rolls out a core update, he has real data from real sites showing what works and what does not.
+        We have also invested heavily in understanding the new frontier of AI search. As tools like Google AI Overviews, ChatGPT, Microsoft Copilot, and Perplexity reshape how people discover businesses, we help our clients get their websites cited and surfaced by these platforms. It is an increasingly important edge for Swansea businesses competing for visibility in a search landscape that changes fast. Learn more about our <a href="/ai-search-optimisation-swansea/" class="text-brand hover:underline">AI search optimisation service</a>.
       </p>
     </section>
 
     <section class="space-y-4">
-      <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Why Swansea</h2>
+      <h2 class="text-2xl font-heading font-semibold text-gray-900 mt-12 mb-4">Our Approach</h2>
       <p class="text-gray-700 leading-relaxed mb-4">
-        Swansea is a city with layers that outsiders miss. The tourism economy around the Gower Peninsula and Swansea Bay creates seasonal search demand that businesses can capture with the right content, published at the right time. The healthcare hub at Morriston Hospital anchors a cluster of medical and wellness services with high-value search intent. The tech startups at SA1 Waterfront are building companies that need SEO from day one. The education sector around Swansea University generates search demand from students, parents, and academic professionals throughout the year.
+        Every project we take on follows the same core principles: let the data lead, be completely transparent, avoid anything shady, and build rankings that last.
       </p>
+
+      <h3 class="text-xl font-heading font-semibold text-gray-800 mt-8 mb-3">Data First, Always</h3>
       <p class="text-gray-700 leading-relaxed mb-4">
-        Understanding this landscape matters because search behaviour in Swansea is not the same as search behaviour in Cardiff, Bristol, or London. A tourist near Mumbles searching for a restaurant has different intent and expectations from a Morriston resident searching for a plumber. A Swansea University student looking for a tutor uses different search patterns from a parent in Sketty doing the same. Local SEO that does not account for these distinctions produces generic results. SEO Swansea accounts for them because Sunny understands the area and its communities.
+        We never recommend anything based on a hunch. Every strategy starts with data from Google Search Console, keyword research tools, and competitor analysis. We identify which searches your potential customers are actually making, how your website currently stacks up, and where the biggest opportunities lie. Your budget goes toward the actions most likely to bring in revenue, not toward ticking boxes on a generic SEO checklist.
       </p>
+
+      <h3 class="text-xl font-heading font-semibold text-gray-800 mt-8 mb-3">Plain-Language Reporting</h3>
       <p class="text-gray-700 leading-relaxed mb-4">
-        The Swansea market also sits in a competitive sweet spot. It is large enough to generate meaningful search volume across most commercial categories. The city has over 240,000 residents and attracts millions of visitors annually to landmarks like the National Waterfront Museum, Swansea Bay, and the Gower Peninsula. Yet the SEO competition is far less intense than in major English cities. Many Swansea businesses still do no SEO at all, relying on word of mouth or social media alone. This means a well-executed SEO campaign delivers faster, more visible results than the same effort would produce in a saturated market.
+        You get full access to your Google Search Console and analytics data. Our monthly reports show keyword movements, traffic trends, completed work, and the plan for next month. No black-box summaries. No jargon-filled charts designed to impress rather than inform. We show you the raw numbers and explain what they mean in plain English.
+      </p>
+
+      <h3 class="text-xl font-heading font-semibold text-gray-800 mt-8 mb-3">No Dodgy Tactics</h3>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        We do not use link schemes, private blog networks, keyword stuffing, cloaking, or any technique that breaks Google's rules. Those shortcuts sometimes deliver a short-term bump, but they inevitably lead to penalties that can wipe out months or years of progress. Everything we do is sustainable, ethical, and designed to build lasting authority. Your reputation is too important to gamble with.
+      </p>
+
+      <h3 class="text-xl font-heading font-semibold text-gray-800 mt-8 mb-3">Traditional SEO Meets AI Search</h3>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Search is no longer just about Google's ten blue links. AI-powered tools are changing how people find and evaluate businesses. We integrate AI search optimisation alongside traditional SEO, making sure your website is structured and written so that both search engines and AI systems can extract, understand, and cite your content. It is a forward-looking capability that most agencies have not caught up with yet.
       </p>
     </section>
 
     <section class="space-y-4">
-      <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Approach to SEO</h2>
+      <h2 class="text-2xl font-heading font-semibold text-gray-900 mt-12 mb-4">Why Swansea</h2>
       <p class="text-gray-700 leading-relaxed mb-4">
-        Every SEO engagement at SEO Swansea follows the same principles: data-driven decisions, transparent reporting, no black-hat tactics, and a focus on sustainable rankings that compound over time.
+        Swansea is a city with layers that outsiders miss. The tourism economy around the Gower Peninsula and Swansea Bay creates seasonal search demand that businesses can capture with the right content at the right time. The healthcare hub at Morriston Hospital anchors a cluster of medical and wellness services with high-value search intent. The tech startups at SA1 Waterfront need SEO from day one. And the education sector around Swansea University generates year-round search demand from students, parents, and academics.
       </p>
-
-      <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Data First, Always</h3>
       <p class="text-gray-700 leading-relaxed mb-4">
-        Recommendations are never based on hunches. Every strategy starts with data from Google Search Console, keyword research tools, and competitor analysis. We identify which searches your potential customers are actually making, how your website currently performs against those searches, and where the highest-impact opportunities lie. This means your budget goes toward the actions most likely to generate revenue, not toward generic SEO checklists.
+        This matters because search behaviour in Swansea is genuinely different from search behaviour in Cardiff, Bristol, or London. A tourist near Mumbles searching for a restaurant has different intent from a Morriston resident looking for a plumber. A Swansea University student hunting for a tutor uses different search patterns from a parent in Sketty doing the same thing. Local SEO that ignores these distinctions produces generic results. We account for them because we live and work in this community.
       </p>
-
-      <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Transparent Reporting</h3>
       <p class="text-gray-700 leading-relaxed mb-4">
-        You receive full access to your Google Search Console and analytics data. Monthly reports show keyword ranking changes, traffic trends, work completed, and the plan for the next month. There is no black-box reporting where you receive a vague summary and have to trust that progress is being made. You see the raw data, and we explain what it means in plain language.
-      </p>
-
-      <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">No Black-Hat Tactics</h3>
-      <p class="text-gray-700 leading-relaxed mb-4">
-        SEO Swansea does not use link schemes, private blog networks, keyword stuffing, cloaking, or any technique that violates Google's guidelines. These shortcuts occasionally produce short-term gains but inevitably result in penalties that can destroy a business's online visibility for months or years. Every technique we use is sustainable, ethical, and designed to build lasting authority. Your website's reputation is too important to gamble with manipulative tactics.
-      </p>
-
-      <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-3">Traditional SEO Meets AI Search</h3>
-      <p class="text-gray-700 leading-relaxed mb-4">
-        The search landscape is no longer just about Google's ten blue links. AI-powered tools like Google AI Overviews, ChatGPT, and Microsoft Copilot are changing how consumers find and evaluate businesses. SEO Swansea integrates AI search optimisation alongside traditional SEO, ensuring your website is structured and written in ways that both search engines and AI systems can extract, understand, and cite. Learn more about our <a href="/ai-search-optimisation-swansea/" class="text-brand hover:underline">AI search optimisation service</a>.
+        The Swansea market also sits in a competitive sweet spot. With over 240,000 residents and millions of annual visitors drawn to landmarks like the National Waterfront Museum, Swansea Bay, and the Gower, there is real search volume across most commercial categories. Yet SEO competition is far less intense than in major English cities. Many Swansea businesses still rely entirely on word of mouth or social media. That means a well-executed SEO campaign delivers faster, more visible results than the same effort would in a saturated market.
       </p>
     </section>
 
     <section class="space-y-4">
-      <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Skills and Expertise</h2>
+      <h2 class="text-2xl font-heading font-semibold text-gray-900 mt-12 mb-4">What We Do Best</h2>
       <p class="text-gray-700 leading-relaxed mb-4">
-        SEO is a broad discipline. Many consultants specialise in one area and outsource the rest. Sunny covers the full stack, which means faster turnaround, fewer communication gaps, and a coherent strategy where every element reinforces the others.
+        SEO is a broad discipline. Many consultants specialise in one area and outsource the rest. Our team covers the full stack, which means faster turnaround, fewer communication gaps, and a joined-up strategy where every piece reinforces the others.
       </p>
       <div class="grid md:grid-cols-2 gap-4 mt-4">
         <div class="border border-gray-200 rounded-lg p-4">
           <h3 class="font-semibold text-gray-900 mb-2">Technical SEO</h3>
-          <p class="text-sm text-gray-700">Site speed, Core Web Vitals, crawlability, indexation, server configuration, mobile usability, and structured data implementation. The foundation every ranking depends on.</p>
+          <p class="text-sm text-gray-700">Site speed, Core Web Vitals, crawlability, indexation, server configuration, mobile usability, and structured data. The foundation every ranking depends on.</p>
         </div>
         <div class="border border-gray-200 rounded-lg p-4">
           <h3 class="font-semibold text-gray-900 mb-2">Local SEO</h3>
-          <p class="text-sm text-gray-700">Google Business Profile optimisation, citation building, local schema markup, review generation, and geo-targeted content. Built specifically for businesses serving Swansea and South Wales customers.</p>
+          <p class="text-sm text-gray-700">Google Business Profile optimisation, citation building, local schema markup, review generation, and geo-targeted content. Built specifically for businesses serving Swansea and South Wales.</p>
         </div>
         <div class="border border-gray-200 rounded-lg p-4">
           <h3 class="font-semibold text-gray-900 mb-2">Content Strategy</h3>
@@ -212,11 +184,11 @@ const schema = [
         </div>
         <div class="border border-gray-200 rounded-lg p-4">
           <h3 class="font-semibold text-gray-900 mb-2">Structured Data and Schema</h3>
-          <p class="text-sm text-gray-700">JSON-LD implementation for LocalBusiness, FAQPage, Article, BreadcrumbList, Product, and dozens of other schema types. Rich snippets and knowledge panel signals that improve click-through rates.</p>
+          <p class="text-sm text-gray-700">JSON-LD implementation for LocalBusiness, FAQPage, Article, BreadcrumbList, Product, and dozens of other schema types. Rich snippets that improve click-through rates.</p>
         </div>
         <div class="border border-gray-200 rounded-lg p-4">
           <h3 class="font-semibold text-gray-900 mb-2">Site Speed Optimisation</h3>
-          <p class="text-sm text-gray-700">Image compression, lazy loading, critical CSS extraction, JavaScript deferral, caching strategies, and CDN configuration. Faster pages rank higher and convert better.</p>
+          <p class="text-sm text-gray-700">Image compression, lazy loading, critical CSS, JavaScript deferral, caching strategies, and CDN configuration. Faster pages rank higher and convert better.</p>
         </div>
         <div class="border border-gray-200 rounded-lg p-4">
           <h3 class="font-semibold text-gray-900 mb-2">Analytics and Reporting</h3>
@@ -224,46 +196,46 @@ const schema = [
         </div>
       </div>
       <p class="text-gray-700 leading-relaxed mb-4 mt-4">
-        See the full range of <a href="/services/" class="text-brand hover:underline">SEO services</a> available or check our <a href="/seo-pricing-swansea/" class="text-brand hover:underline">pricing page</a> for package details.
+        See the full range of <a href="/services/" class="text-brand hover:underline">SEO services</a> we offer, or check our <a href="/seo-pricing-swansea/" class="text-brand hover:underline">pricing page</a> for package details.
       </p>
     </section>
 
     <section class="space-y-4">
-      <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Why Not a Big Agency</h2>
+      <h2 class="text-2xl font-heading font-semibold text-gray-900 mt-12 mb-4">Why Not a Big Agency</h2>
       <p class="text-gray-700 leading-relaxed mb-4">
-        Large SEO agencies in Cardiff and London charge premium retainers, often starting at several thousand pounds per month. For that fee, your account is typically managed by a junior team member who follows templated processes. The senior strategist you met during the sales pitch rarely touches your account after the contract is signed. Communication passes through an account manager, adding delays and diluting technical nuance.
+        Large SEO agencies in Cardiff and London charge premium retainers, often several thousand pounds a month. For that fee, your account is typically managed by a junior team member following templated processes. The senior strategist you met during the sales pitch rarely touches your account after the contract is signed. Communication passes through an account manager, adding delays and losing technical nuance along the way.
       </p>
       <p class="text-gray-700 leading-relaxed mb-4">
-        With SEO Swansea, there is no chain of communication. Sunny handles strategy, execution, and reporting personally. When you send an email or pick up the phone, you reach the person who wrote your last technical audit and knows your Google Search Console data by heart. This direct relationship eliminates the overhead, miscommunication, and quality inconsistency that plague larger agency operations.
+        With Bay SEO Studio, there is no chain of communication. Our team handles strategy, execution, and reporting directly. When you get in touch, you reach the people who wrote your last technical audit and know your Search Console data inside out. That direct relationship cuts out the overhead, miscommunication, and quality wobbles that plague larger operations.
       </p>
       <p class="text-gray-700 leading-relaxed mb-4">
-        The cost difference is significant. Consultancy rates are lower than agency retainers because there is no office lease, no sales team commission, and no middle management layer to fund. You pay for SEO work, not agency infrastructure. The savings do not come at the expense of capability. The same technical skills, the same strategic depth, the same reporting standards, delivered without the overhead.
+        The cost difference is real, too. Our rates are lower than agency retainers because we do not have an office lease, a sales team on commission, or layers of middle management to fund. You pay for SEO work, not agency infrastructure. And the savings do not come at the expense of capability. The same technical skills, the same strategic depth, the same reporting standards, just without the bloat.
       </p>
       <p class="text-gray-700 leading-relaxed mb-4">
-        There is also the local knowledge advantage. A London agency servicing a Swansea client will not understand why search patterns differ between SA1 and SA6, or why tourism-related queries spike when the Gower Peninsula appears in a national travel supplement. These details matter for local SEO effectiveness, and they come from genuine familiarity with the area, not from desk research.
+        Then there is the local knowledge. A London agency servicing a Swansea client will not understand why search patterns differ between SA1 and SA6, or why tourism queries spike when the Gower Peninsula appears in a national travel supplement. Those details matter for local SEO, and they come from genuine familiarity with the area, not from desk research.
       </p>
       <p class="text-gray-700 leading-relaxed mb-4">
-        View our <a href="/case-studies/" class="text-brand hover:underline">case studies</a> to see the results this approach delivers.
+        Have a look at our <a href="/case-studies/" class="text-brand hover:underline">case studies</a> to see the kind of results this approach delivers.
       </p>
     </section>
 
     <section class="bg-gray-50 rounded-xl p-8 text-center space-y-4 mt-12">
-      <h2 class="text-2xl font-semibold text-gray-900">Ready to Grow Your Swansea Business Through Search?</h2>
+      <h2 class="text-2xl font-heading font-semibold text-gray-900">Ready to Grow Your Swansea Business Through Search?</h2>
       <p class="text-gray-700 max-w-xl mx-auto">
-        Start with a free SEO audit. We will analyse your website, competitors, and local search landscape, then show you exactly where the opportunities are. No obligation, no sales pressure.
+        Let's start with a free SEO audit. We will look at your website, your competitors, and the local search landscape, then show you exactly where the opportunities are. No obligation, no hard sell.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center mt-6">
         <a href="/free-seo-audit-swansea/" class="bg-brand text-white px-6 py-3 rounded-lg hover:bg-brand-dark inline-block font-medium transition-colors">
           Request Free Audit
         </a>
         <a href="/contact/" class="border border-brand text-brand px-6 py-3 rounded-lg hover:bg-brand hover:text-white transition-colors font-medium inline-block">
-          Contact Sunny
+          Let's Talk
         </a>
       </div>
     </section>
 
     <section class="space-y-4 mt-12">
-      <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Frequently Asked Questions</h2>
+      <h2 class="text-2xl font-heading font-semibold text-gray-900 mt-12 mb-4">Frequently Asked Questions</h2>
       <div class="space-y-3 mt-6">
         {faqItems.map(item => (
           <details class="border border-gray-200 rounded-lg group">

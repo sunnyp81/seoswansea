@@ -1,10 +1,10 @@
-# SEO Swansea
+# Bay SEO Studio
 
-> Local search marketing consultancy for Swansea, Gower, and South Wales businesses. Run by Sunny Patel.
+> Friendly, results-driven search marketing consultancy for Swansea, Gower, and South Wales businesses.
 
 ## Pages
 
-- [Home](https://seoswansea.uk/): SEO Swansea — local search marketing for South Wales businesses. Services overview, coverage areas, and why local SEO matters for Swansea.
+- [Home](https://seoswansea.uk/): Bay SEO Studio — local search marketing for South Wales businesses. Services overview, coverage areas, and why local SEO matters for Swansea.
 - [Services](https://seoswansea.uk/services/): Full list of SEO services offered — local SEO, technical SEO, content strategy, link building, Google Business Profile optimisation.
 - [Areas We Cover](https://seoswansea.uk/areas/): Geographic coverage across Swansea suburbs (Mumbles, Sketty, Morriston, Uplands) and wider South Wales.
 - [Industries](https://seoswansea.uk/industries/): Industry-specific SEO for tourism, hospitality, healthcare, education, construction, and manufacturing in Swansea.
@@ -14,10 +14,9 @@
 - [SEO Pricing Swansea](https://seoswansea.uk/seo-pricing-swansea/): Transparent SEO pricing tiers for Swansea businesses, from starter to enterprise.
 - [AI Search Optimisation Swansea](https://seoswansea.uk/ai-search-optimisation-swansea/): How to get cited by ChatGPT, Perplexity, Claude, Copilot, and Google AI Overviews. AEO, GEO, and LLM SEO explained.
 - [Case Studies](https://seoswansea.uk/case-studies/): SEO case studies from Swansea businesses — real results from local campaigns.
-- [About](https://seoswansea.uk/about/): About Sunny Patel — SEO consultant serving Swansea and South Wales. Background, approach, credentials.
+- [About](https://seoswansea.uk/about/): About Bay SEO Studio — a Swansea-based SEO consultancy. Our approach, local expertise, and methodology.
 - [Contact](https://seoswansea.uk/contact/): Get in touch for SEO help in Swansea. Coverage map and contact form.
 
 ## Contact
 
-- Email: 2012.infinite@gmail.com
-- Website: https://sunnypatel.co.uk
+- Email: hello@seoswansea.uk
