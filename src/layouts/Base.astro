@@ -40,7 +40,7 @@ const url = canonical || Astro.url.href;
 <body class="bg-surface text-text font-sans antialiased">
   <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-brand focus:text-white focus:px-4 focus:py-2 focus:rounded focus:z-50">Skip to content</a>
 
-  <header class="sticky top-0 z-40 bg-surface/95 backdrop-blur border-b border-gray-200">
+  <header class="sticky top-0 z-40 bg-surface/95 backdrop-blur border-b border-gray-200/60">
     <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="/" class="text-xl font-heading font-bold text-brand hover:text-brand-dark transition-colors">
         SEO Swansea
@@ -51,7 +51,7 @@ const url = canonical || Astro.url.href;
         <a href="/industries/" class="text-text-muted hover:text-brand transition-colors">Industries</a>
         <a href="/case-studies/" class="text-text-muted hover:text-brand transition-colors">Case Studies</a>
         <a href="/about/" class="text-text-muted hover:text-brand transition-colors">About</a>
-        <a href="/contact/" class="bg-accent text-brand px-4 py-2 rounded-lg hover:bg-accent/80 transition-colors font-semibold">Free Audit</a>
+        <a href="/contact/" class="bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent/80 transition-colors font-semibold shadow-md shadow-accent/20">Free Audit</a>
       </nav>
       <button id="mobile-menu-btn" class="md:hidden p-2 text-text-muted" aria-label="Open menu">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
@@ -63,11 +63,18 @@ const url = canonical || Astro.url.href;
       <a href="/industries/" class="block text-text-muted hover:text-brand">Industries</a>
       <a href="/case-studies/" class="block text-text-muted hover:text-brand">Case Studies</a>
       <a href="/about/" class="block text-text-muted hover:text-brand">About</a>
-      <a href="/contact/" class="block bg-accent text-brand px-4 py-2 rounded-lg text-center hover:bg-accent/80 font-semibold">Free Audit</a>
+      <a href="/contact/" class="block bg-accent text-white px-4 py-2 rounded-lg text-center hover:bg-accent/80 font-semibold">Free Audit</a>
     </nav>
   </header>
 
-  <main id="main" class="max-w-3xl mx-auto px-4 py-8 md:py-12">
+  <!-- Atmospheric background -->
+  <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div class="absolute -top-40 -left-40 w-96 h-96 rounded-full opacity-20 blur-[80px] animate-aurora-1" style="background: radial-gradient(circle, #334155, transparent 70%)"></div>
+    <div class="absolute -bottom-20 -right-32 w-80 h-80 rounded-full opacity-15 blur-[100px] animate-aurora-2" style="background: radial-gradient(circle, #FB7185, transparent 70%)"></div>
+    <div class="absolute inset-0 opacity-[0.04]" style="background-image: radial-gradient(circle, rgba(51,65,85,0.4) 1px, transparent 1px); background-size: 24px 24px; mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);"></div>
+  </div>
+
+  <main id="main" class="max-w-5xl mx-auto px-4 py-8 md:py-12">
     <slot />
   </main>
 
@@ -102,6 +109,10 @@ const url = canonical || Astro.url.href;
     document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
       document.getElementById('mobile-menu')?.classList.toggle('hidden');
     });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
