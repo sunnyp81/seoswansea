@@ -23,13 +23,13 @@ const url = canonical || Astro.url.href;
   <meta property="og:description" content={description} />
   <meta property="og:url" content={url} />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Bay SEO Studio" />
+  <meta property="og:site_name" content="SEO Swansea" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     @import "../styles/global.css";
   </style>
@@ -40,10 +40,10 @@ const url = canonical || Astro.url.href;
 <body class="bg-surface text-text font-sans antialiased">
   <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-brand focus:text-white focus:px-4 focus:py-2 focus:rounded focus:z-50">Skip to content</a>
 
-  <header class="sticky top-0 z-40 bg-surface/95 backdrop-blur border-b border-brand/10">
+  <header class="sticky top-0 z-40 bg-surface/95 backdrop-blur border-b border-gray-200">
     <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="/" class="text-xl font-heading font-bold text-brand hover:text-brand-dark transition-colors">
-        Bay SEO Studio
+        SEO Swansea
       </a>
       <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
         <a href="/services/" class="text-text-muted hover:text-brand transition-colors">Services</a>
@@ -51,19 +51,19 @@ const url = canonical || Astro.url.href;
         <a href="/industries/" class="text-text-muted hover:text-brand transition-colors">Industries</a>
         <a href="/case-studies/" class="text-text-muted hover:text-brand transition-colors">Case Studies</a>
         <a href="/about/" class="text-text-muted hover:text-brand transition-colors">About</a>
-        <a href="/contact/" class="bg-brand text-white px-4 py-2 rounded-lg hover:bg-brand-dark transition-colors">Have a Chat</a>
+        <a href="/contact/" class="bg-accent text-brand px-4 py-2 rounded-lg hover:bg-accent/80 transition-colors font-semibold">Free Audit</a>
       </nav>
       <button id="mobile-menu-btn" class="md:hidden p-2 text-text-muted" aria-label="Open menu">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
       </button>
     </div>
-    <nav id="mobile-menu" class="md:hidden hidden border-t border-brand/10 bg-surface px-4 py-4 space-y-3">
+    <nav id="mobile-menu" class="md:hidden hidden border-t border-gray-200 bg-surface px-4 py-4 space-y-3">
       <a href="/services/" class="block text-text-muted hover:text-brand">Services</a>
       <a href="/areas/" class="block text-text-muted hover:text-brand">Areas</a>
       <a href="/industries/" class="block text-text-muted hover:text-brand">Industries</a>
       <a href="/case-studies/" class="block text-text-muted hover:text-brand">Case Studies</a>
       <a href="/about/" class="block text-text-muted hover:text-brand">About</a>
-      <a href="/contact/" class="block bg-brand text-white px-4 py-2 rounded-lg text-center hover:bg-brand-dark">Have a Chat</a>
+      <a href="/contact/" class="block bg-accent text-brand px-4 py-2 rounded-lg text-center hover:bg-accent/80 font-semibold">Free Audit</a>
     </nav>
   </header>
 
@@ -71,11 +71,11 @@ const url = canonical || Astro.url.href;
     <slot />
   </main>
 
-  <footer class="bg-text text-gray-300 mt-16">
+  <footer class="bg-brand text-gray-300 mt-16">
     <div class="max-w-5xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-8">
       <div>
-        <h3 class="text-white font-heading font-semibold mb-3">Bay SEO Studio</h3>
-        <p class="text-sm leading-relaxed">Friendly, results-driven search marketing for Swansea, Gower, and South Wales businesses.</p>
+        <h3 class="text-white font-heading font-semibold mb-3">SEO Swansea</h3>
+        <p class="text-sm leading-relaxed">We help Swansea, Gower, and South Wales businesses get found in search — traditional and AI-powered.</p>
       </div>
       <div>
         <h3 class="text-white font-heading font-semibold mb-3">Coverage</h3>
@@ -93,8 +93,8 @@ const url = canonical || Astro.url.href;
         </ul>
       </div>
     </div>
-    <div class="border-t border-gray-700 text-center text-xs text-gray-500 py-4">
-      &copy; {currentYear} Bay SEO Studio. All rights reserved.
+    <div class="border-t border-brand-light text-center text-xs text-gray-400 py-4">
+      &copy; {currentYear} SEO Swansea. All rights reserved.
     </div>
   </footer>
 

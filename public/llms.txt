@@ -1,20 +1,20 @@
-# Bay SEO Studio
+# SEO Swansea
 
-> Friendly, results-driven search marketing consultancy for Swansea, Gower, and South Wales businesses.
+> Local search marketing consultancy for Swansea, Gower, and South Wales businesses.
 
 ## Pages
 
-- [Home](https://seoswansea.uk/): Bay SEO Studio — local search marketing for South Wales businesses. Services overview, coverage areas, and why local SEO matters for Swansea.
-- [Services](https://seoswansea.uk/services/): Full list of SEO services offered — local SEO, technical SEO, content strategy, link building, Google Business Profile optimisation.
+- [Home](https://seoswansea.uk/): SEO Swansea — local search marketing for South Wales businesses. Services overview, coverage areas, and why local SEO matters for Swansea.
+- [Services](https://seoswansea.uk/services/): Full list of SEO services — local SEO, technical SEO, content strategy, link building, Google Business Profile optimisation.
 - [Areas We Cover](https://seoswansea.uk/areas/): Geographic coverage across Swansea suburbs (Mumbles, Sketty, Morriston, Uplands) and wider South Wales.
 - [Industries](https://seoswansea.uk/industries/): Industry-specific SEO for tourism, hospitality, healthcare, education, construction, and manufacturing in Swansea.
-- [Technical SEO Swansea](https://seoswansea.uk/technical-seo-swansea/): Technical SEO audit and implementation services — site speed, crawlability, structured data, Core Web Vitals.
-- [SEO Audit Swansea](https://seoswansea.uk/seo-audit-swansea/): Comprehensive paid SEO audit service with actionable recommendations for Swansea businesses.
+- [Technical SEO Swansea](https://seoswansea.uk/technical-seo-swansea/): Technical SEO audit and implementation — site speed, crawlability, structured data, Core Web Vitals.
+- [SEO Audit Swansea](https://seoswansea.uk/seo-audit-swansea/): Comprehensive paid SEO audit with actionable recommendations for Swansea businesses.
 - [Free SEO Audit Swansea](https://seoswansea.uk/free-seo-audit-swansea/): Free mini SEO audit for Swansea businesses — enter your URL and get a report.
 - [SEO Pricing Swansea](https://seoswansea.uk/seo-pricing-swansea/): Transparent SEO pricing tiers for Swansea businesses, from starter to enterprise.
 - [AI Search Optimisation Swansea](https://seoswansea.uk/ai-search-optimisation-swansea/): How to get cited by ChatGPT, Perplexity, Claude, Copilot, and Google AI Overviews. AEO, GEO, and LLM SEO explained.
 - [Case Studies](https://seoswansea.uk/case-studies/): SEO case studies from Swansea businesses — real results from local campaigns.
-- [About](https://seoswansea.uk/about/): About Bay SEO Studio — a Swansea-based SEO consultancy. Our approach, local expertise, and methodology.
+- [About](https://seoswansea.uk/about/): About SEO Swansea — our approach, local expertise, and methodology.
 - [Contact](https://seoswansea.uk/contact/): Get in touch for SEO help in Swansea. Coverage map and contact form.
 
 ## Contact

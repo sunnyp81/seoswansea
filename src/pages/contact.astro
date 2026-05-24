@@ -1,24 +1,24 @@
 ---
 import Base from '../layouts/Base.astro';
 
-const metaDescription = "Get in touch with Bay SEO Studio to chat about your search marketing. Free SEO audit available for businesses in Swansea, Mumbles, Gower, and across South Wales.";
+const metaDescription = "Drop us a message to chat about your search marketing. Free SEO audit available for businesses in Swansea, Mumbles, Gower, and across South Wales.";
 
 const faqItems = [
   {
-    q: "How quickly will we hear back?",
-    a: "We reply to every enquiry within one working day. Most messages get a response within a few hours during business hours. If something is urgent, just say so in your message and we will bump it up the queue."
+    q: "How fast do you usually reply?",
+    a: "We get back to every enquiry within one working day. Most messages get a response within a few hours during business hours. If something's urgent, just mention it in your message and we'll bump it up the queue."
   },
   {
-    q: "What should I include in my first message?",
-    a: "Your website URL, the area your business serves, and a quick summary of what you are hoping to achieve with SEO. That lets us come back with something useful straight away. If you are not sure what you need, just tell us about your business and we will take it from there."
+    q: "What's helpful to include in a first message?",
+    a: "Your website URL, the area your business serves, and a quick summary of what you're hoping to achieve with SEO. That lets us come back with something useful straight away. If you're not sure what you need, just tell us about your business and we'll take it from there."
   },
   {
-    q: "Is the first consultation free?",
-    a: "Yes, always. Every new enquiry gets a free SEO audit and consultation. We look at your website, your Google Business Profile, your competitors, and the local search landscape, then walk you through what we find. No strings attached, no obligation to go further."
+    q: "Does the first consultation cost anything?",
+    a: "Not a penny. Every new enquiry gets a free SEO audit and consultation. We look at your website, your Google Business Profile, your competitors, and the local search landscape, then walk you through what we find. No strings attached, no obligation to go further."
   },
   {
-    q: "Do you work with businesses outside Swansea?",
-    a: "We do. Our home turf is Swansea and South Wales, but we work with businesses anywhere in the UK that need local SEO, technical SEO, or AI search optimisation. We operate remote-first, so location is never a barrier. Visit our areas page at /areas/ for the full list of locations we cover."
+    q: "Do you take on clients outside Swansea?",
+    a: "We do. Our home turf is Swansea and South Wales, but we work with businesses anywhere in the UK that need local SEO, technical SEO, or AI search optimisation. We're remote-first, so location is never a barrier. Visit our areas page at /areas/ for the full list of locations we cover."
   }
 ];
 
@@ -44,7 +44,7 @@ const schema = [
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Contact Bay SEO Studio | Swansea SEO",
+    "name": "Contact SEO Swansea | Drop Us a Line",
     "url": "https://seoswansea.uk/contact/",
     "description": metaDescription
   },
@@ -59,74 +59,82 @@ const schema = [
         "text": item.a
       }
     }))
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SEO Swansea",
+    "url": "https://seoswansea.uk",
+    "email": "hello@seoswansea.uk",
+    "sameAs": []
   }
 ];
 ---
 
-<Base title="Contact Bay SEO Studio | Swansea SEO" description={metaDescription} schema={schema}>
+<Base title="Contact SEO Swansea | Drop Us a Line" description={metaDescription} schema={schema}>
 
   <article class="space-y-12">
 
     <header>
-      <h1 class="text-3xl font-heading font-bold text-brand mb-4">Get in Touch with Bay SEO Studio</h1>
+      <h1 class="text-3xl font-heading font-bold text-brand mb-4">Get in Touch — SEO Swansea</h1>
     </header>
 
     <section class="space-y-4">
-      <p class="text-gray-700 leading-relaxed mb-4">
-        Fancy a chat about how search marketing can grow your business? Whether you need a full SEO strategy, a one-off technical audit, or just some honest advice on where to start with AI search, we would love to hear from you. Every conversation begins with understanding your business, your customers, and what you are trying to achieve.
+      <p class="text-text/80 leading-relaxed mb-4">
+        Fancy a chat about how search marketing can grow your business? Whether you need a full SEO strategy, a one-off technical audit, or just some honest advice on where to start with AI search, we'd love to hear from you. Every conversation begins with understanding your business, your customers, and what you're trying to achieve.
       </p>
-      <p class="text-gray-700 leading-relaxed mb-4">
-        Fill in the form below or drop us an email. We get back to everyone within one working day, and every new enquiry comes with a <a href="/free-seo-audit-swansea/" class="text-brand hover:underline">free SEO audit</a> so you can see exactly where your website stands before committing to a thing.
+      <p class="text-text/80 leading-relaxed mb-4">
+        Fill in the form below or drop us a message at <a href="mailto:hello@seoswansea.uk" class="text-accent hover:underline font-medium">hello@seoswansea.uk</a>. We get back to everyone within one working day, and every new enquiry comes with a <a href="/free-seo-audit-swansea/" class="text-accent hover:underline font-medium">free SEO audit</a> so you can see exactly where your website stands before committing to a thing.
       </p>
     </section>
 
-    <div class="bg-teal-50 border-l-4 border-teal-500 p-4 rounded-r-lg my-6">
-      <p class="font-semibold text-teal-900 mb-1">Quick Answer</p>
-      <p class="text-teal-800">
-        Email <a href="mailto:hello@seoswansea.uk" class="text-brand hover:underline font-medium">hello@seoswansea.uk</a> or use the form below. We reply within one working day and include a free SEO audit with every enquiry.
+    <div class="bg-rose-50 border-l-4 border-accent p-4 rounded-r-lg my-6">
+      <p class="font-semibold text-text mb-1">Quick Answer</p>
+      <p class="text-text/80">
+        Email <a href="mailto:hello@seoswansea.uk" class="text-accent hover:underline font-medium">hello@seoswansea.uk</a> or use the form below. We reply within one working day and include a free SEO audit with every enquiry.
       </p>
     </div>
 
     <section class="space-y-4">
-      <h2 class="text-2xl font-heading font-semibold text-gray-900 mt-12 mb-4">Drop Us a Line</h2>
+      <h2 class="text-2xl font-heading font-semibold text-text mt-12 mb-4">Drop Us a Message</h2>
 
       <div class="border border-gray-200 rounded-lg p-6 mb-6">
-        <h3 class="text-xl font-heading font-semibold text-gray-800 mt-0 mb-3">Email</h3>
-        <p class="text-gray-700 leading-relaxed mb-4">
-          <a href="mailto:hello@seoswansea.uk" class="text-brand hover:underline">hello@seoswansea.uk</a>
+        <h3 class="text-xl font-heading font-semibold text-brand-light mt-0 mb-3">Email</h3>
+        <p class="text-text/80 leading-relaxed mb-4">
+          <a href="mailto:hello@seoswansea.uk" class="text-accent hover:underline font-medium">hello@seoswansea.uk</a>
         </p>
-        <h3 class="text-xl font-heading font-semibold text-gray-800 mt-8 mb-3">Website</h3>
-        <p class="text-gray-700 leading-relaxed mb-4">
-          <a href="https://seoswansea.uk" class="text-brand hover:underline">seoswansea.uk</a>
+        <h3 class="text-xl font-heading font-semibold text-brand-light mt-8 mb-3">Website</h3>
+        <p class="text-text/80 leading-relaxed mb-4">
+          <a href="https://seoswansea.uk" class="text-accent hover:underline font-medium">seoswansea.uk</a>
         </p>
       </div>
     </section>
 
     <section class="space-y-4">
-      <h2 class="text-2xl font-heading font-semibold text-gray-900 mt-12 mb-4">Send a Message</h2>
+      <h2 class="text-2xl font-heading font-semibold text-text mt-12 mb-4">Send a Message</h2>
       <form action="#" method="POST" class="space-y-5">
         <div>
-          <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name *</label>
-          <input type="text" id="name" name="name" required autocomplete="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand outline-none" />
+          <label for="name" class="block text-sm font-medium text-text mb-1">Name *</label>
+          <input type="text" id="name" name="name" required autocomplete="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none" />
         </div>
         <div>
-          <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
-          <input type="email" id="email" name="email" required autocomplete="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand outline-none" />
+          <label for="email" class="block text-sm font-medium text-text mb-1">Email *</label>
+          <input type="email" id="email" name="email" required autocomplete="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none" />
         </div>
         <div>
-          <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone (optional)</label>
-          <input type="tel" id="phone" name="phone" autocomplete="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand outline-none" />
+          <label for="phone" class="block text-sm font-medium text-text mb-1">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none" />
         </div>
         <div>
-          <label for="website" class="block text-sm font-medium text-gray-700 mb-1">Website URL (optional)</label>
-          <input type="url" id="website" name="website" placeholder="https://" autocomplete="url" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand outline-none" />
+          <label for="website" class="block text-sm font-medium text-text mb-1">Website URL (optional)</label>
+          <input type="url" id="website" name="website" placeholder="https://" autocomplete="url" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none" />
         </div>
         <div>
-          <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message *</label>
-          <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand focus:border-brand outline-none"></textarea>
+          <label for="message" class="block text-sm font-medium text-text mb-1">Message *</label>
+          <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none"></textarea>
         </div>
         <div>
-          <button type="submit" class="bg-brand text-white px-8 py-3 rounded-lg hover:bg-brand-dark transition-colors cursor-pointer text-lg font-medium">
+          <button type="submit" class="bg-accent text-brand px-8 py-3 rounded-lg hover:bg-accent/80 font-semibold cursor-pointer text-lg">
             Send Message
           </button>
         </div>
@@ -134,36 +142,36 @@ const schema = [
     </section>
 
     <section class="space-y-4">
-      <h2 class="text-2xl font-heading font-semibold text-gray-900 mt-12 mb-4">Where We Work</h2>
-      <p class="text-gray-700 leading-relaxed mb-4">
-        Our home base is Swansea, and we know the area inside out. We cover Swansea city centre, Mumbles, Sketty, Morriston, Uplands, and Gorseinon, as well as Neath, Port Talbot, Llanelli, and Carmarthen. If your business targets customers anywhere in these areas, we can help regardless of where you are physically based.
+      <h2 class="text-2xl font-heading font-semibold text-text mt-12 mb-4">Where We Work</h2>
+      <p class="text-text/80 leading-relaxed mb-4">
+        Our home base is Swansea, and we know the area inside out. We cover Swansea city centre, Mumbles, Sketty, Morriston, Uplands, and Gorseinon, as well as Neath, Port Talbot, Llanelli, and Carmarthen. If your business targets customers anywhere in these areas, we can help regardless of where you're physically based.
       </p>
-      <p class="text-gray-700 leading-relaxed mb-4">
-        We work remote-first, so we serve clients across the UK. But our deepest local knowledge covers the Swansea Bay area and the Gower Peninsula, where we understand the seasonal search patterns, local directories, and competitive dynamics that shape how SEO works in this part of Wales.
+      <p class="text-text/80 leading-relaxed mb-4">
+        We're remote-first, so we serve clients across the UK. But our deepest local knowledge covers the Swansea Bay area and the Gower Peninsula, where we understand the seasonal search patterns, local directories, and competitive dynamics that shape how SEO works in this part of Wales.
       </p>
-      <p class="text-gray-700 leading-relaxed mb-4">
-        Take a look at our <a href="/services/" class="text-brand hover:underline">services page</a> to see what we offer, or check <a href="/seo-pricing-swansea/" class="text-brand hover:underline">pricing</a> for package details. You can also <a href="/about/" class="text-brand hover:underline">read more about our team</a>.
+      <p class="text-text/80 leading-relaxed mb-4">
+        Take a look at our <a href="/services/" class="text-accent hover:underline font-medium">services page</a> to see what we offer, or check <a href="/seo-pricing-swansea/" class="text-accent hover:underline font-medium">pricing</a> for package details. You can also <a href="/about/" class="text-accent hover:underline font-medium">read more about our team</a>.
       </p>
     </section>
 
     <section class="space-y-4">
-      <h2 class="text-2xl font-heading font-semibold text-gray-900 mt-12 mb-4">Find Us</h2>
+      <h2 class="text-2xl font-heading font-semibold text-text mt-12 mb-4">Find Us</h2>
       <div class="rounded-lg overflow-hidden border border-gray-200">
         <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-3.99%2C51.59%2C-3.89%2C51.65&layer=mapnik" width="100%" height="300" style="border:0" loading="lazy" title="Map of Swansea"></iframe>
       </div>
-      <p class="text-sm text-gray-500 mt-2">Serving Swansea city centre, Mumbles, Sketty, Morriston, Uplands, Gorseinon, and wider South Wales.</p>
+      <p class="text-sm text-text/80 mt-2">Serving Swansea city centre, Mumbles, Sketty, Morriston, Uplands, Gorseinon, and wider South Wales.</p>
     </section>
 
     <section class="space-y-4 mt-12">
-      <h2 class="text-2xl font-heading font-semibold text-gray-900 mt-12 mb-4">Frequently Asked Questions</h2>
+      <h2 class="text-2xl font-heading font-semibold text-text mt-12 mb-4">Frequently Asked Questions</h2>
       <div class="space-y-3 mt-6">
         {faqItems.map(item => (
           <details class="border border-gray-200 rounded-lg group">
-            <summary class="cursor-pointer font-medium text-gray-900 py-2 flex items-center justify-between p-4 hover:bg-gray-50 transition-colors rounded-lg">
+            <summary class="cursor-pointer font-medium text-text py-2 flex items-center justify-between p-4 hover:bg-gray-50 transition-colors rounded-lg">
               <span>{item.q}</span>
               <svg class="w-5 h-5 text-gray-500 flex-shrink-0 ml-4 group-open:rotate-180 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
             </summary>
-            <div class="px-4 pb-4 text-gray-700 leading-relaxed">
+            <div class="px-4 pb-4 text-text/80 leading-relaxed">
               <p>{item.a}</p>
             </div>
           </details>
@@ -172,15 +180,15 @@ const schema = [
     </section>
 
     <section class="bg-gray-50 rounded-xl p-8 text-center space-y-4 mt-12">
-      <h2 class="text-2xl font-heading font-semibold text-gray-900">Ready to Get Started?</h2>
-      <p class="text-gray-700 max-w-xl mx-auto">
-        Every project kicks off with a free SEO audit. We look at your website, competitors, and local search landscape so you know exactly where the opportunities are before committing to anything.
+      <h2 class="text-2xl font-heading font-semibold text-text">Ready to Get Started?</h2>
+      <p class="text-text/80 max-w-xl mx-auto">
+        Every project kicks off with a free SEO audit. We'll look at your website, competitors, and local search landscape so you know exactly where the opportunities are before committing to anything.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center mt-6">
-        <a href="/free-seo-audit-swansea/" class="bg-brand text-white px-6 py-3 rounded-lg hover:bg-brand-dark inline-block font-medium transition-colors">
+        <a href="/free-seo-audit-swansea/" class="bg-accent text-brand px-6 py-3 rounded-lg hover:bg-accent/80 font-semibold inline-block">
           Request Free Audit
         </a>
-        <a href="/about/" class="border border-brand text-brand px-6 py-3 rounded-lg hover:bg-brand hover:text-white transition-colors font-medium inline-block">
+        <a href="/about/" class="border border-brand text-brand px-6 py-3 rounded-lg hover:bg-brand hover:text-white transition-colors font-semibold inline-block">
           Learn About Us
         </a>
       </div>
