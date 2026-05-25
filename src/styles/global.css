@@ -71,3 +71,18 @@
   letter-spacing: -0.03em;
   line-height: 1;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up { opacity: 1; transform: none; transition: none; }
+  .glass-card { transition: none; }
+  .growth-line { animation: none; stroke-dashoffset: 0; }
+  * { animation-duration: 0.01ms !important; }
+}
+
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

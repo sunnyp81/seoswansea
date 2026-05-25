@@ -1,0 +1,199 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const metaDescription = "Free Local Business Schema Generator for Swansea businesses. Fill in your details and get ready-to-use JSON-LD structured data for Google rich results.";
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Free Local Business Schema Generator — SEO Swansea",
+    "url": "https://seoswansea.uk/tools/schema-generator/",
+    "description": metaDescription
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://seoswansea.uk/" },
+      { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://seoswansea.uk/tools/" },
+      { "@type": "ListItem", "position": 3, "name": "Schema Generator", "item": "https://seoswansea.uk/tools/schema-generator/" }
+    ]
+  }
+];
+---
+
+<Base title="Free Local Business Schema Generator — SEO Swansea" description={metaDescription} schema={schema}>
+
+  <section class="max-w-3xl mx-auto">
+    <div class="mb-10">
+      <h1 class="text-3xl md:text-4xl font-heading font-bold text-brand mb-4">Local Business Schema Generator</h1>
+      <p class="text-text-muted leading-relaxed">
+        Structured data helps Google understand your business and can unlock rich results — star ratings, opening hours, and map pins directly in search. Fill in your details below and copy the JSON-LD code into your website's <code class="bg-gray-100 px-1.5 py-0.5 rounded text-sm">&lt;head&gt;</code> section.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Form -->
+      <form id="schema-form" class="space-y-4">
+        <div>
+          <label for="bizName" class="block text-sm font-medium text-text mb-1">Business Name</label>
+          <input type="text" id="bizName" placeholder="e.g. Bay View Dental" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent" />
+        </div>
+        <div>
+          <label for="bizType" class="block text-sm font-medium text-text mb-1">Business Type</label>
+          <select id="bizType" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent">
+            <option value="LocalBusiness">Local Business (General)</option>
+            <option value="Restaurant">Restaurant</option>
+            <option value="Dentist">Dentist</option>
+            <option value="Plumber">Plumber</option>
+            <option value="Electrician">Electrician</option>
+            <option value="HealthAndBeautyBusiness">Health & Beauty</option>
+            <option value="LegalService">Legal Service</option>
+            <option value="AccountingService">Accounting Service</option>
+            <option value="AutoRepair">Auto Repair</option>
+            <option value="RealEstateAgent">Estate Agent</option>
+            <option value="Store">Retail Store</option>
+            <option value="FitnessCenter">Gym / Fitness</option>
+            <option value="Hotel">Hotel / B&B</option>
+            <option value="BarOrPub">Bar / Pub</option>
+            <option value="Bakery">Bakery / Cafe</option>
+            <option value="VeterinaryCare">Veterinary</option>
+          </select>
+        </div>
+        <div>
+          <label for="bizUrl" class="block text-sm font-medium text-text mb-1">Website URL</label>
+          <input type="url" id="bizUrl" placeholder="https://example.com" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent" />
+        </div>
+        <div>
+          <label for="bizPhone" class="block text-sm font-medium text-text mb-1">Phone Number</label>
+          <input type="tel" id="bizPhone" placeholder="01792 000000" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent" />
+        </div>
+        <div>
+          <label for="bizEmail" class="block text-sm font-medium text-text mb-1">Email (optional)</label>
+          <input type="email" id="bizEmail" placeholder="hello@example.com" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent" />
+        </div>
+        <div>
+          <label for="bizStreet" class="block text-sm font-medium text-text mb-1">Street Address</label>
+          <input type="text" id="bizStreet" placeholder="42 Wind Street" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent" />
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label for="bizCity" class="block text-sm font-medium text-text mb-1">City</label>
+            <input type="text" id="bizCity" value="Swansea" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent" />
+          </div>
+          <div>
+            <label for="bizPostcode" class="block text-sm font-medium text-text mb-1">Postcode</label>
+            <input type="text" id="bizPostcode" placeholder="SA1 1AA" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent" />
+          </div>
+        </div>
+        <div>
+          <label for="bizDescription" class="block text-sm font-medium text-text mb-1">Business Description (1-2 sentences)</label>
+          <textarea id="bizDescription" rows="2" placeholder="A family-run dental practice serving Swansea since 1998." class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent"></textarea>
+        </div>
+        <div>
+          <label for="bizHours" class="block text-sm font-medium text-text mb-1">Opening Hours (optional)</label>
+          <input type="text" id="bizHours" placeholder="Mo-Fr 09:00-17:00, Sa 09:00-13:00" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent" />
+          <p class="text-xs text-text-muted mt-1">Format: Mo-Fr 09:00-17:00, Sa 09:00-13:00</p>
+        </div>
+        <button type="button" id="generate-btn" class="w-full bg-accent text-white px-5 py-3 rounded-lg font-semibold hover:bg-accent/80 transition-colors shadow-md shadow-accent/20">
+          Generate Schema
+        </button>
+      </form>
+
+      <!-- Output -->
+      <div>
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-sm font-medium text-text">JSON-LD Output</span>
+          <button id="copy-btn" class="text-xs bg-brand/10 text-brand px-3 py-1 rounded-md hover:bg-brand/20 transition-colors hidden">Copy</button>
+        </div>
+        <pre id="schema-output" class="bg-gray-900 text-gray-100 rounded-xl p-4 text-xs leading-relaxed overflow-x-auto min-h-[300px] font-mono"><code class="text-gray-400">Fill in the form and click Generate...</code></pre>
+        <div id="copy-msg" class="text-xs text-green-600 mt-2 hidden">Copied to clipboard.</div>
+      </div>
+    </div>
+
+    <!-- Guidance section -->
+    <section class="mt-16 space-y-6 fade-up">
+      <h2 class="text-2xl font-heading font-bold text-brand">How to Add Schema to Your Website</h2>
+      <ol class="list-decimal pl-6 space-y-3 text-text-muted leading-relaxed">
+        <li>Fill in your business details in the form above and click <strong>Generate Schema</strong>.</li>
+        <li>Copy the JSON-LD code using the Copy button.</li>
+        <li>Paste it into the <code class="bg-gray-100 px-1.5 py-0.5 rounded text-xs">&lt;head&gt;</code> section of your website's HTML, or use a plugin like RankMath or Yoast if you're on WordPress.</li>
+        <li>Test it with <a href="https://search.google.com/test/rich-results" class="text-accent hover:underline" rel="noopener noreferrer">Google's Rich Results Test</a> to verify it's working.</li>
+      </ol>
+
+      <h2 class="text-2xl font-heading font-bold text-brand mt-12">Why Schema Markup Matters for Swansea Businesses</h2>
+      <p class="text-text-muted leading-relaxed">
+        Schema markup is code that tells search engines exactly what your business is, where it's located, and what services you offer. Without it, Google has to guess — and guessing means your business might not appear in the map pack, might not show star ratings, and might not get picked up by AI search tools like ChatGPT or Google AI Overviews.
+      </p>
+      <p class="text-text-muted leading-relaxed">
+        For local businesses in Swansea, the <code class="bg-gray-100 px-1.5 py-0.5 rounded text-xs">LocalBusiness</code> schema type is particularly powerful. It connects your business name, address, phone number, and opening hours into a structured format that Google's local algorithm can use directly. This helps with map pack rankings, knowledge panel appearances, and voice search results.
+      </p>
+      <p class="text-text-muted leading-relaxed">
+        Our generator creates valid JSON-LD markup — the format Google recommends. It's easy to add, doesn't affect your page's appearance, and gives search engines the confidence to show your business details prominently in results.
+      </p>
+      <p class="text-text-muted leading-relaxed">
+        Need help implementing schema across your entire site? Our <a href="/technical-seo-swansea/" class="text-accent hover:underline font-medium">technical SEO service</a> handles structured data as part of a comprehensive technical foundation.
+      </p>
+    </section>
+  </section>
+
+  <script>
+    document.getElementById('generate-btn')?.addEventListener('click', () => {
+      const v = (id) => document.getElementById(id)?.value?.trim() || '';
+      const name = v('bizName');
+      if (!name) { alert('Please enter a business name.'); return; }
+
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": v('bizType') || "LocalBusiness",
+        "name": name,
+      };
+      if (v('bizDescription')) schema.description = v('bizDescription');
+      if (v('bizUrl')) schema.url = v('bizUrl');
+      if (v('bizPhone')) schema.telephone = v('bizPhone');
+      if (v('bizEmail')) schema.email = v('bizEmail');
+
+      const street = v('bizStreet');
+      const city = v('bizCity');
+      const postcode = v('bizPostcode');
+      if (street || city || postcode) {
+        schema.address = {
+          "@type": "PostalAddress",
+          ...(street && { streetAddress: street }),
+          ...(city && { addressLocality: city }),
+          ...(postcode && { postalCode: postcode }),
+          "addressCountry": "GB"
+        };
+      }
+
+      if (v('bizHours')) {
+        schema.openingHoursSpecification = v('bizHours').split(',').map(h => {
+          const parts = h.trim().match(/^(\S+)\s+(\S+)$/);
+          if (!parts) return null;
+          return {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": parts[1],
+            "opens": parts[2].split('-')[0],
+            "closes": parts[2].split('-')[1]
+          };
+        }).filter(Boolean);
+      }
+
+      const output = JSON.stringify(schema, null, 2);
+      const el = document.getElementById('schema-output');
+      el.innerHTML = '<code>' + output.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</code>';
+      document.getElementById('copy-btn')?.classList.remove('hidden');
+    });
+
+    document.getElementById('copy-btn')?.addEventListener('click', () => {
+      const text = document.getElementById('schema-output')?.textContent || '';
+      navigator.clipboard.writeText(text).then(() => {
+        const msg = document.getElementById('copy-msg');
+        msg?.classList.remove('hidden');
+        setTimeout(() => msg?.classList.add('hidden'), 2000);
+      });
+    });
+  </script>
+
+</Base>

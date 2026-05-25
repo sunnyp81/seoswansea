@@ -1,0 +1,68 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const metaDescription = "Free SEO tools for Swansea businesses. Schema generator, local SEO checklist, and seasonal search calendar to improve your Google visibility.";
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Free SEO Tools — SEO Swansea",
+    "url": "https://seoswansea.uk/tools/",
+    "description": metaDescription
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://seoswansea.uk/" },
+      { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://seoswansea.uk/tools/" }
+    ]
+  }
+];
+
+const tools = [
+  {
+    title: "Local Business Schema Generator",
+    description: "Generate valid JSON-LD structured data for your Swansea business. Helps Google show your business details, star ratings, and opening hours in search results.",
+    href: "/tools/schema-generator/",
+    icon: "code"
+  },
+  {
+    title: "Local SEO Checklist",
+    description: "Interactive 40-point checklist covering everything from Google Business Profile to technical SEO. Tick items off as you go — progress saves automatically.",
+    href: "/tools/local-seo-checklist/",
+    icon: "check"
+  },
+  {
+    title: "Swansea Seasonal Search Calendar",
+    description: "Month-by-month breakdown of search demand peaks across Swansea's key industries. Plan your content around when customers are actually searching.",
+    href: "/tools/seasonal-search-calendar/",
+    icon: "calendar"
+  }
+];
+---
+
+<Base title="Free SEO Tools — SEO Swansea" description={metaDescription} schema={schema}>
+
+  <section class="max-w-3xl mx-auto">
+    <h1 class="text-3xl md:text-4xl font-heading font-bold text-brand mb-4">Free SEO Tools</h1>
+    <p class="text-text-muted leading-relaxed mb-10">
+      Practical tools to help Swansea businesses improve their search visibility. No sign-up needed — just use them.
+    </p>
+
+    <div class="space-y-4">
+      {tools.map((tool, i) => (
+        <a href={tool.href} class="glass-card rounded-xl p-6 block group fade-up" style={`transition-delay: ${i * 80}ms`}>
+          <h2 class="text-lg font-heading font-semibold text-text group-hover:text-accent transition-colors mb-2">{tool.title}</h2>
+          <p class="text-sm text-text-muted leading-relaxed">{tool.description}</p>
+          <span class="inline-flex items-center gap-1 text-accent text-sm font-medium mt-3">
+            Use this tool
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+</Base>

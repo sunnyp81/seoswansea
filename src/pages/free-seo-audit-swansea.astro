@@ -142,7 +142,11 @@ const schema = [
 
   <p class="text-text/80 leading-relaxed mb-4">Fill in the form below and we'll send your free SEO audit report within 2 working days. No obligation, no sales call.</p>
 
-  <form action="#" method="POST" class="bg-gray-50 border border-gray-200 rounded-lg p-6 space-y-4 my-6">
+  <form action="https://api.staticforms.xyz/submit" method="POST" class="bg-gray-50 border border-gray-200 rounded-lg p-6 space-y-4 my-6">
+    <input type="hidden" name="accessKey" value="sf_9e906eb6c00416b9d3354749" />
+    <input type="hidden" name="subject" value="SEO Swansea — Free Audit Request" />
+    <input type="hidden" name="redirectTo" value="https://seoswansea.uk/free-seo-audit-swansea/?sent=1" />
+    <input type="text" name="honeypot" style="display:none" />
     <div>
       <label for="name" class="block text-sm font-medium text-text mb-1">Your Name</label>
       <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none" placeholder="e.g. Rhys Davies" />

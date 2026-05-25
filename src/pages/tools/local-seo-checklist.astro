@@ -1,0 +1,198 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const metaDescription = "Free 40-point local SEO checklist for Swansea businesses. Covers Google Business Profile, on-page SEO, technical health, content, and link building. Progress saves automatically.";
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Local SEO Checklist for Swansea Businesses — SEO Swansea",
+    "url": "https://seoswansea.uk/tools/local-seo-checklist/",
+    "description": metaDescription
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://seoswansea.uk/" },
+      { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://seoswansea.uk/tools/" },
+      { "@type": "ListItem", "position": 3, "name": "Local SEO Checklist", "item": "https://seoswansea.uk/tools/local-seo-checklist/" }
+    ]
+  }
+];
+
+const sections = [
+  {
+    title: "Google Business Profile",
+    items: [
+      "Claimed and verified your Google Business Profile listing",
+      "Business name matches your real-world signage exactly",
+      "Primary category set to the most specific option available",
+      "Added 3-5 secondary categories that describe your services",
+      "Full business description written (750 characters, include Swansea keywords naturally)",
+      "Opening hours set correctly (including bank holidays)",
+      "Phone number matches your website and citations",
+      "Website URL points to your homepage (or most relevant landing page)",
+      "Added 10+ high-quality photos (exterior, interior, team, products/services)",
+      "Service area or address set correctly for your business type",
+      "Products/services listed with descriptions and prices where possible",
+      "Responding to all Google reviews within 48 hours"
+    ]
+  },
+  {
+    title: "On-Page SEO",
+    items: [
+      "Every page has a unique title tag under 60 characters",
+      "Every page has a unique meta description between 140-160 characters",
+      "H1 tag on each page includes primary keyword + location where natural",
+      "NAP (name, address, phone) consistent in footer across all pages",
+      "Service pages exist for each core service you offer",
+      "Location pages exist for each area you serve (e.g. /seo-mumbles/)",
+      "Internal links connect related service and location pages",
+      "Images have descriptive alt text (not keyword-stuffed)",
+      "Schema markup added (LocalBusiness + BreadcrumbList minimum)"
+    ]
+  },
+  {
+    title: "Technical SEO",
+    items: [
+      "Site loads in under 3 seconds on mobile (test with PageSpeed Insights)",
+      "Mobile-friendly (no horizontal scroll, tap targets properly sized)",
+      "HTTPS enabled with valid SSL certificate",
+      "XML sitemap submitted to Google Search Console",
+      "Robots.txt not accidentally blocking important pages",
+      "No duplicate content issues (canonical tags in place)",
+      "404 page returns correct status code (not a soft 404)",
+      "Core Web Vitals passing (LCP, CLS, INP all green)",
+      "Structured data validates in Google Rich Results Test"
+    ]
+  },
+  {
+    title: "Content",
+    items: [
+      "Homepage clearly states what you do and where you do it",
+      "Blog or resource section with locally relevant content",
+      "FAQ page answering common customer questions",
+      "Content updated within the last 6 months (shows freshness signals)",
+      "No thin pages (every indexable page has 300+ words of unique content)"
+    ]
+  },
+  {
+    title: "Citations & Links",
+    items: [
+      "Listed on Yell.com with correct NAP",
+      "Listed on Bing Places with correct details",
+      "Listed on Apple Maps Connect",
+      "Listed on relevant industry directories (e.g. Checkatrade, TripAdvisor)",
+      "Listed on local Swansea directories (Swansea BID, Visit Swansea)",
+      "NAP consistent across all directory listings (audit with a citation tool)"
+    ]
+  }
+];
+---
+
+<Base title="Local SEO Checklist for Swansea Businesses — SEO Swansea" description={metaDescription} schema={schema}>
+
+  <section class="max-w-3xl mx-auto">
+    <div class="mb-10">
+      <h1 class="text-3xl md:text-4xl font-heading font-bold text-brand mb-4">Local SEO Checklist</h1>
+      <p class="text-text-muted leading-relaxed">
+        A practical 40-point checklist covering the fundamentals every Swansea business needs for local search visibility. Tick items off as you complete them — your progress saves automatically in your browser.
+      </p>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="glass-card rounded-xl p-4 mb-8 fade-up">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-sm font-medium text-text">Your Progress</span>
+        <span id="progress-text" class="text-sm font-semibold text-accent">0 / 41 complete</span>
+      </div>
+      <div class="w-full bg-gray-100 rounded-full h-2.5">
+        <div id="progress-bar" class="bg-accent h-2.5 rounded-full transition-all duration-300" style="width: 0%"></div>
+      </div>
+    </div>
+
+    <!-- Checklist sections -->
+    <div class="space-y-8">
+      {sections.map((section, si) => (
+        <div class="fade-up" style={`transition-delay: ${si * 60}ms`}>
+          <h2 class="text-xl font-heading font-semibold text-brand mb-4 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-accent"></span>
+            {section.title}
+          </h2>
+          <div class="space-y-2">
+            {section.items.map((item, ii) => {
+              const id = `check-${si}-${ii}`;
+              return (
+                <label for={id} class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer group">
+                  <input type="checkbox" id={id} class="checklist-item mt-0.5 w-4 h-4 rounded border-gray-300 text-accent focus:ring-accent/30 flex-shrink-0" />
+                  <span class="text-sm text-text-muted leading-relaxed group-has-[:checked]:line-through group-has-[:checked]:text-text-muted/50">{item}</span>
+                </label>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Reset -->
+    <div class="mt-8 text-center">
+      <button id="reset-btn" class="text-xs text-text-muted hover:text-accent transition-colors">Reset all progress</button>
+    </div>
+
+    <!-- Context section -->
+    <section class="mt-16 space-y-6 fade-up">
+      <h2 class="text-2xl font-heading font-bold text-brand">How to Use This Checklist</h2>
+      <p class="text-text-muted leading-relaxed">
+        Work through each section in order. Google Business Profile and on-page SEO are the highest-impact areas for most Swansea businesses, so start there. Technical SEO forms the foundation — without it, your content and links won't deliver their full potential.
+      </p>
+      <p class="text-text-muted leading-relaxed">
+        Don't try to do everything in one day. Pick 3-5 items per week and tick them off as you go. The progress bar saves to your browser, so you can come back anytime.
+      </p>
+      <p class="text-text-muted leading-relaxed">
+        If you'd rather have someone handle this for you, our <a href="/services/" class="text-accent hover:underline font-medium">SEO services</a> cover all 40 points and more. Or grab a <a href="/free-seo-audit-swansea/" class="text-accent hover:underline font-medium">free audit</a> to see which items are most urgent for your site.
+      </p>
+    </section>
+  </section>
+
+  <script>
+    const items = document.querySelectorAll('.checklist-item');
+    const STORAGE_KEY = 'seoswansea-checklist';
+
+    function loadState() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+        items.forEach(el => { if (saved[el.id]) el.checked = true; });
+      } catch {}
+      updateProgress();
+    }
+
+    function saveState() {
+      const state = {};
+      items.forEach(el => { if (el.checked) state[el.id] = true; });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      updateProgress();
+    }
+
+    function updateProgress() {
+      const total = items.length;
+      const done = [...items].filter(el => el.checked).length;
+      const pct = Math.round((done / total) * 100);
+      document.getElementById('progress-text').textContent = `${done} / ${total} complete`;
+      document.getElementById('progress-bar').style.width = `${pct}%`;
+    }
+
+    items.forEach(el => el.addEventListener('change', saveState));
+    document.getElementById('reset-btn')?.addEventListener('click', () => {
+      if (confirm('Reset all progress? This cannot be undone.')) {
+        localStorage.removeItem(STORAGE_KEY);
+        items.forEach(el => el.checked = false);
+        updateProgress();
+      }
+    });
+
+    loadState();
+  </script>
+
+</Base>

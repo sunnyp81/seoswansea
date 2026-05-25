@@ -1,0 +1,200 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const metaDescription = "Swansea seasonal search calendar: month-by-month guide to when customers search for local services. Plan content around demand peaks for tourism, trades, hospitality, and more.";
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Swansea Seasonal Search Calendar — SEO Swansea",
+    "url": "https://seoswansea.uk/tools/seasonal-search-calendar/",
+    "description": metaDescription
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://seoswansea.uk/" },
+      { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://seoswansea.uk/tools/" },
+      { "@type": "ListItem", "position": 3, "name": "Seasonal Search Calendar", "item": "https://seoswansea.uk/tools/seasonal-search-calendar/" }
+    ]
+  }
+];
+
+const months = [
+  {
+    name: "January",
+    peaks: ["New Year fitness", "Accountants / tax returns", "Home improvement planning", "Diet & weight loss"],
+    tip: "Publish 'new year, new website' or 'start the year right' content. Tradespeople: push spring booking slots.",
+    heat: 2
+  },
+  {
+    name: "February",
+    peaks: ["Valentine's dining & gifts", "Half-term activities", "Wedding planning kicks off", "Spring cleaning services"],
+    tip: "Restaurants and gift shops: optimise for Valentine's searches 3-4 weeks ahead. Activity providers: target 'half term Swansea' keywords.",
+    heat: 2
+  },
+  {
+    name: "March",
+    peaks: ["Mothering Sunday", "Garden & landscaping", "Easter holiday planning", "Six Nations rugby traffic"],
+    tip: "Tourism businesses: publish Easter content by early March. Rugby weekends drive hospitality searches — have match-day content ready.",
+    heat: 3
+  },
+  {
+    name: "April",
+    peaks: ["Easter holidays", "Gower camping/caravanning", "Spring home maintenance", "Outdoor dining season starts"],
+    tip: "Peak booking season starts. 'Things to do Swansea Easter' spikes hard. Ensure your GBP has seasonal photos and updated hours.",
+    heat: 4
+  },
+  {
+    name: "May",
+    peaks: ["Bank holiday weekends", "Mumbles seafront tourism", "Garden services peak", "Wedding season ramps up"],
+    tip: "Three bank holidays = three search spikes. Tourism and hospitality: push content for each long weekend separately.",
+    heat: 4
+  },
+  {
+    name: "June",
+    peaks: ["Summer tourism begins", "Gower beaches peak", "School prom services", "Father's Day"],
+    tip: "Beach and outdoor activity searches explode. If you serve tourists, your content should already be ranking — June is harvest time, not planting time.",
+    heat: 5
+  },
+  {
+    name: "July",
+    peaks: ["Peak tourism month", "Summer holiday activities", "Airshow & events", "Ice cream / casual dining peak"],
+    tip: "Highest search volume for Swansea tourism. Focus on review generation and GBP posts. 'Open now' and 'near me' searches dominate.",
+    heat: 5
+  },
+  {
+    name: "August",
+    peaks: ["Tourism sustained", "Back-to-school planning starts", "Summer events & festivals", "Late holiday bookings"],
+    tip: "Tourism still high but back-to-school creeps in late August. Education businesses: start publishing September content now.",
+    heat: 5
+  },
+  {
+    name: "September",
+    peaks: ["University freshers", "Back to school", "Autumn home improvement", "Heating & boiler services start"],
+    tip: "20,000 students arrive in Swansea. Massive demand spike for student services, food, fitness, and nightlife. Tradespeople: heating content should be live.",
+    heat: 4
+  },
+  {
+    name: "October",
+    peaks: ["Halloween events", "Half-term activities", "Heating/plumbing emergency searches", "Christmas planning begins"],
+    tip: "Energy and heating searches spike with first cold snap. Publish 'emergency plumber Swansea' and 'boiler repair' content before October.",
+    heat: 3
+  },
+  {
+    name: "November",
+    peaks: ["Fireworks / Bonfire Night", "Black Friday retail", "Christmas shopping", "Winter wedding season"],
+    tip: "Retail: Black Friday content must be live by early November. Service businesses: push gift voucher and Christmas booking pages.",
+    heat: 3
+  },
+  {
+    name: "December",
+    peaks: ["Christmas dining & parties", "Gift searches peak", "New Year events", "January planning"],
+    tip: "Hospitality peaks for Christmas parties and NYE. Smart businesses also publish January content now — it needs time to index before the new year rush.",
+    heat: 4
+  }
+];
+---
+
+<Base title="Swansea Seasonal Search Calendar — SEO Swansea" description={metaDescription} schema={schema}>
+
+  <section class="max-w-3xl mx-auto">
+    <div class="mb-10">
+      <h1 class="text-3xl md:text-4xl font-heading font-bold text-brand mb-4">Swansea Seasonal Search Calendar</h1>
+      <p class="text-text-muted leading-relaxed">
+        Search demand in Swansea follows predictable seasonal patterns. Tourism spikes in summer, trades peak in autumn, retail explodes before Christmas. This calendar shows you when customers are searching — so you can have content ready before the demand hits.
+      </p>
+      <p class="text-text-muted leading-relaxed mt-3 text-sm">
+        <strong>The golden rule:</strong> publish content 6-8 weeks before the demand peak. Google needs time to crawl, index, and rank your pages. If you wait until customers are already searching, you've missed the window.
+      </p>
+    </div>
+
+    <!-- Legend -->
+    <div class="glass-card rounded-xl p-4 mb-8 fade-up">
+      <div class="flex items-center gap-6 flex-wrap text-sm">
+        <span class="font-medium text-text">Search intensity:</span>
+        <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-amber-100 border border-amber-200"></span> Low</span>
+        <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-amber-200 border border-amber-300"></span> Moderate</span>
+        <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-orange-300 border border-orange-400"></span> High</span>
+        <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-accent border border-accent"></span> Peak</span>
+      </div>
+    </div>
+
+    <!-- Calendar grid -->
+    <div class="space-y-4">
+      {months.map((month, i) => {
+        const heatColors = ['', '', 'bg-amber-50 border-amber-100', 'bg-amber-100/60 border-amber-200', 'bg-orange-50 border-orange-200', 'bg-rose-50 border-accent/20'];
+        const heatBg = heatColors[month.heat] || '';
+        return (
+          <div class={`rounded-xl border p-5 fade-up ${heatBg}`} style={`transition-delay: ${i * 40}ms`}>
+            <div class="flex items-start justify-between gap-4 mb-3">
+              <h2 class="text-lg font-heading font-semibold text-text">{month.name}</h2>
+              <div class="flex gap-0.5 flex-shrink-0">
+                {Array.from({length: 5}).map((_, j) => (
+                  <div class={`w-2 h-5 rounded-sm ${j < month.heat ? 'bg-accent' : 'bg-gray-200'}`}></div>
+                ))}
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-3">
+              {month.peaks.map(peak => (
+                <span class="text-xs bg-white/80 border border-gray-200 text-text-muted px-2 py-0.5 rounded-full">{peak}</span>
+              ))}
+            </div>
+            <p class="text-sm text-text-muted leading-relaxed">
+              <strong class="text-text">Action:</strong> {month.tip}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Industry breakdown -->
+    <section class="mt-16 space-y-6 fade-up">
+      <h2 class="text-2xl font-heading font-bold text-brand">Peak Months by Industry</h2>
+      <p class="text-text-muted leading-relaxed mb-6">
+        Quick reference for when each industry sees its highest local search demand in Swansea:
+      </p>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-gray-200">
+              <th class="text-left py-3 pr-4 font-semibold text-text">Industry</th>
+              <th class="text-left py-3 pr-4 font-semibold text-text">Peak Months</th>
+              <th class="text-left py-3 font-semibold text-text">Publish Content By</th>
+            </tr>
+          </thead>
+          <tbody class="text-text-muted">
+            <tr class="border-b border-gray-100"><td class="py-2.5 pr-4">Tourism & Hospitality</td><td class="py-2.5 pr-4">June — August</td><td class="py-2.5">April</td></tr>
+            <tr class="border-b border-gray-100"><td class="py-2.5 pr-4">Restaurants & Cafes</td><td class="py-2.5 pr-4">June — August, December</td><td class="py-2.5">April, October</td></tr>
+            <tr class="border-b border-gray-100"><td class="py-2.5 pr-4">Plumbers & Heating</td><td class="py-2.5 pr-4">October — January</td><td class="py-2.5">August</td></tr>
+            <tr class="border-b border-gray-100"><td class="py-2.5 pr-4">Gardening & Landscaping</td><td class="py-2.5 pr-4">March — June</td><td class="py-2.5">January</td></tr>
+            <tr class="border-b border-gray-100"><td class="py-2.5 pr-4">Accountants</td><td class="py-2.5 pr-4">January — March</td><td class="py-2.5">November</td></tr>
+            <tr class="border-b border-gray-100"><td class="py-2.5 pr-4">Fitness & Gyms</td><td class="py-2.5 pr-4">January, September</td><td class="py-2.5">November, July</td></tr>
+            <tr class="border-b border-gray-100"><td class="py-2.5 pr-4">Wedding Services</td><td class="py-2.5 pr-4">January — March (planning)</td><td class="py-2.5">November</td></tr>
+            <tr class="border-b border-gray-100"><td class="py-2.5 pr-4">Student Services</td><td class="py-2.5 pr-4">September — October</td><td class="py-2.5">July</td></tr>
+            <tr class="border-b border-gray-100"><td class="py-2.5 pr-4">Retail (general)</td><td class="py-2.5 pr-4">November — December</td><td class="py-2.5">September</td></tr>
+            <tr><td class="py-2.5 pr-4">Home Improvement</td><td class="py-2.5 pr-4">March — May, September</td><td class="py-2.5">January, July</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Context -->
+    <section class="mt-12 space-y-4 fade-up">
+      <h2 class="text-2xl font-heading font-bold text-brand">Why Timing Matters for Local SEO</h2>
+      <p class="text-text-muted leading-relaxed">
+        Google doesn't rank new pages instantly. It takes time for content to be crawled, indexed, and tested against competing pages. For seasonal content, this means you need to publish well ahead of the demand curve.
+      </p>
+      <p class="text-text-muted leading-relaxed">
+        In Swansea specifically, tourism seasonality is extreme. A hotel or restaurant that publishes summer content in June is already too late — the pages that rank in July were published and earning links in March and April.
+      </p>
+      <p class="text-text-muted leading-relaxed">
+        Our <a href="/services/" class="text-accent hover:underline font-medium">content strategy service</a> builds these seasonal patterns into a 12-month calendar for your specific industry. We plan, write, and publish content at the right time so it's ranking when your customers start searching.
+      </p>
+    </section>
+  </section>
+
+</Base>
