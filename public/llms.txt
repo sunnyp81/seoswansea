@@ -4,17 +4,23 @@
 
 ## Pages
 
-- [Home](https://seoswansea.uk/): SEO Swansea — local search marketing for South Wales businesses. Services overview, coverage areas, and why local SEO matters for Swansea.
-- [Services](https://seoswansea.uk/services/): Full list of SEO services — local SEO, technical SEO, content strategy, link building, Google Business Profile optimisation.
+- [Home](https://seoswansea.uk/): SEO Swansea, local search marketing for South Wales businesses. Services overview, coverage areas, and why local SEO matters for Swansea.
+- [Services](https://seoswansea.uk/services/): Full list of SEO services, local SEO, technical SEO, content strategy, link building, Google Business Profile optimisation.
 - [Areas We Cover](https://seoswansea.uk/areas/): Geographic coverage across Swansea suburbs (Mumbles, Sketty, Morriston, Uplands) and wider South Wales.
 - [Industries](https://seoswansea.uk/industries/): Industry-specific SEO for tourism, hospitality, healthcare, education, construction, and manufacturing in Swansea.
-- [Technical SEO Swansea](https://seoswansea.uk/technical-seo-swansea/): Technical SEO audit and implementation — site speed, crawlability, structured data, Core Web Vitals.
+- [Technical SEO Swansea](https://seoswansea.uk/technical-seo-swansea/): Technical SEO audit and implementation, site speed, crawlability, structured data, Core Web Vitals.
 - [SEO Audit Swansea](https://seoswansea.uk/seo-audit-swansea/): Comprehensive paid SEO audit with actionable recommendations for Swansea businesses.
-- [Free SEO Audit Swansea](https://seoswansea.uk/free-seo-audit-swansea/): Free mini SEO audit for Swansea businesses — enter your URL and get a report.
+- [Free SEO Audit Swansea](https://seoswansea.uk/free-seo-audit-swansea/): Free mini SEO audit for Swansea businesses, enter your URL and get a report.
 - [SEO Pricing Swansea](https://seoswansea.uk/seo-pricing-swansea/): Transparent SEO pricing tiers for Swansea businesses, from starter to enterprise.
 - [AI Search Optimisation Swansea](https://seoswansea.uk/ai-search-optimisation-swansea/): How to get cited by ChatGPT, Perplexity, Claude, Copilot, and Google AI Overviews. AEO, GEO, and LLM SEO explained.
-- [Case Studies](https://seoswansea.uk/case-studies/): SEO case studies from Swansea businesses — real results from local campaigns.
-- [About](https://seoswansea.uk/about/): About SEO Swansea — our approach, local expertise, and methodology.
+- [Case Studies](https://seoswansea.uk/case-studies/): Illustrative SEO case studies for Swansea businesses, composite scenarios showing how local campaigns typically build rankings, traffic, and leads.
+- [Mumbles Restaurant Case Study](https://seoswansea.uk/case-studies/mumbles-restaurant-google-maps/): Illustrative Google Maps SEO walkthrough for a Mumbles restaurant, from invisible to the top 3 local pack in 3 months.
+- [Morriston Trades Case Study](https://seoswansea.uk/case-studies/morriston-trades-business-organic/): Illustrative organic SEO walkthrough for a Morriston plumbing and heating business, from no web presence to consistent monthly leads.
+- [Free SEO Tools](https://seoswansea.uk/tools/): Free SEO tools for Swansea businesses: schema generator, local SEO checklist, and seasonal search calendar.
+- [Local SEO Checklist](https://seoswansea.uk/tools/local-seo-checklist/): Free 40-point local SEO checklist covering Google Business Profile, on-page SEO, technical health, content, and link building.
+- [Schema Generator](https://seoswansea.uk/tools/schema-generator/): Free Local Business schema generator producing ready-to-use JSON-LD structured data for Google rich results.
+- [Seasonal Search Calendar](https://seoswansea.uk/tools/seasonal-search-calendar/): Month-by-month guide to when Swansea customers search for local services, covering tourism, trades, and hospitality demand peaks.
+- [About](https://seoswansea.uk/about/): About SEO Swansea, our approach, local expertise, and methodology.
 - [Contact](https://seoswansea.uk/contact/): Get in touch for SEO help in Swansea. Coverage map and contact form.
 
 ## Contact

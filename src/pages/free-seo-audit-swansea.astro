@@ -26,7 +26,7 @@ const schema = [
       {
         "@type": "Question",
         "name": "Is this genuinely free, no strings attached?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Completely. No charge, no obligation, no card details needed. We review your website and send you a report highlighting the key issues and opportunities. What you do with it is entirely up to you. There is no sales call unless you ask for one." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Completely. No charge, no obligation, no card details needed. We review your website and send you a report highlighting the key issues and opportunities. What you do with it is entirely up to you. There's no sales call unless you ask for one." }
       },
       {
         "@type": "Question",
@@ -36,7 +36,7 @@ const schema = [
       {
         "@type": "Question",
         "name": "What information do you need from me?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Just your name, email address, website URL, and your business location in Swansea. We do not need access to your hosting, CMS, or any accounts. The free audit is based entirely on what we can see from the public-facing version of your site." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Just your name, email address, website URL, and your business location in Swansea. We don't need access to your hosting, CMS, or any accounts. The free audit is based entirely on what we can see from the public-facing version of your site." }
       },
       {
         "@type": "Question",
@@ -72,13 +72,13 @@ const schema = [
     <p class="text-text/80">Pop your website URL into the form below and we'll send you a free SEO report within 2 working days. No obligation, no sales call. We check speed, mobile friendliness, on-page SEO, and local signals, then tell you what to tackle first.</p>
   </div>
 
-  <p class="text-text/80 leading-relaxed mb-4">Whether you run a cafe in Mumbles, a consultancy at SA1 Waterfront, or a trades business serving the Gower Peninsula, this free audit gives you a practical starting point. You'll know whether your website is helping or hindering your ability to win customers through Google — and you'll have specific steps you can take straight away to improve things.</p>
+  <p class="text-text/80 leading-relaxed mb-4">Whether you run a cafe in Mumbles, a consultancy at SA1 Waterfront, or a trades business serving the Gower Peninsula, this free audit gives you a practical starting point. You'll know whether your website is helping or hindering your ability to win customers through Google, and you'll have specific steps you can take straight away to improve things.</p>
 
   <h2 class="text-2xl font-heading font-semibold text-text mt-12 mb-4">What You'll Get in the Free Audit</h2>
 
   <p class="text-text/80 leading-relaxed mb-4">The free audit covers the four areas that make the biggest difference to how your Swansea business shows up in search results. Each section includes a score or status indicator along with plain-English recommendations.</p>
 
-  <p class="text-text/80 leading-relaxed mb-4"><strong>Site speed analysis.</strong> We measure your page load time and Core Web Vitals on both mobile and desktop. Slow pages lose visitors and rank lower. The report tells you exactly what's dragging things down — whether that's bloated images, render-blocking scripts, or a sluggish server — and how to sort it out.</p>
+  <p class="text-text/80 leading-relaxed mb-4"><strong>Site speed analysis.</strong> We measure your page load time and Core Web Vitals on both mobile and desktop. Slow pages lose visitors and rank lower. The report tells you exactly what's dragging things down, whether that's bloated images, render-blocking scripts, or a sluggish server, and how to sort it out.</p>
 
   <p class="text-text/80 leading-relaxed mb-4"><strong>Mobile usability check.</strong> Over 60 percent of local searches in Swansea happen on a phone. We test your site across different screen sizes and flag problems like text that's too small, buttons squashed too close together, annoying horizontal scrolling, and content that breaks on mobile. Since Google uses mobile-first indexing, mobile usability has a direct effect on your rankings across all devices.</p>
 
@@ -142,6 +142,18 @@ const schema = [
 
   <p class="text-text/80 leading-relaxed mb-4">Fill in the form below and we'll send your free SEO audit report within 2 working days. No obligation, no sales call.</p>
 
+  <div id="sent-banner" class="hidden bg-emerald-50 border-l-4 border-emerald-500 p-4 rounded-r-lg mb-4 text-emerald-900" role="status">
+    <p class="font-semibold">Thanks, your audit request is in.</p>
+    <p class="text-sm">We'll send your free SEO audit report to the email address you gave us within 2 working days.</p>
+  </div>
+  <script is:inline>
+    if (new URLSearchParams(window.location.search).get('sent') === '1') {
+      document.addEventListener('DOMContentLoaded', () => {
+        const b = document.getElementById('sent-banner');
+        if (b) { b.classList.remove('hidden'); b.scrollIntoView({ block: 'center' }); }
+      });
+    }
+  </script>
   <form action="https://api.staticforms.xyz/submit" method="POST" class="bg-gray-50 border border-gray-200 rounded-lg p-6 space-y-4 my-6">
     <input type="hidden" name="accessKey" value="sf_9e906eb6c00416b9d3354749" />
     <input type="hidden" name="_site" value="seoswansea.uk" />
@@ -215,10 +227,11 @@ const schema = [
   <h2 class="text-2xl font-heading font-semibold text-text mt-12 mb-4">Related Pages</h2>
 
   <ul class="text-text/80 leading-relaxed mb-4 space-y-2">
-    <li><a href="/seo-audit-swansea/" class="text-accent hover:underline font-medium">Full SEO Audit</a> — comprehensive five-pillar analysis with competitor benchmarking and strategy call</li>
-    <li><a href="/services/" class="text-accent hover:underline font-medium">All Services</a> — the full range of SEO services we offer to Swansea businesses</li>
-    <li><a href="/seo-pricing-swansea/" class="text-accent hover:underline font-medium">SEO Pricing</a> — clear pricing for audits, retainers, and one-off projects</li>
-    <li><a href="/contact/" class="text-accent hover:underline font-medium">Contact</a> — drop us a message with a question or to talk about your SEO needs</li>
+    <li><a href="/seo-audit-swansea/" class="text-accent hover:underline font-medium">Full SEO Audit</a>, comprehensive five-pillar analysis with competitor benchmarking and strategy call</li>
+    <li><a href="/services/" class="text-accent hover:underline font-medium">All Services</a>, the full range of SEO services we offer to Swansea businesses</li>
+    <li><a href="/seo-pricing-swansea/" class="text-accent hover:underline font-medium">SEO Pricing</a>, clear pricing for audits, retainers, and one-off projects</li>
+    <li><a href="/contact/" class="text-accent hover:underline font-medium">Contact</a>, drop us a message with a question or to talk about your SEO needs</li>
+    <li><a href="/tools/local-seo-checklist/" class="text-accent hover:underline font-medium">Local SEO Checklist</a>, a free 40-point checklist you can work through while you wait for your audit</li>
   </ul>
 
 </Base>

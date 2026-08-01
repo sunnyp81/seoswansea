@@ -76,7 +76,7 @@ const schema = [
   <article class="space-y-12">
 
     <header>
-      <h1 class="text-3xl font-heading font-bold text-brand mb-4">Get in Touch — SEO Swansea</h1>
+      <h1 class="text-3xl font-heading font-bold text-brand mb-4">Get in Touch with SEO Swansea</h1>
     </header>
 
     <section class="space-y-4">
@@ -112,6 +112,18 @@ const schema = [
 
     <section class="space-y-4">
       <h2 class="text-2xl font-heading font-semibold text-text mt-12 mb-4">Send a Message</h2>
+      <div id="sent-banner" class="hidden bg-emerald-50 border-l-4 border-emerald-500 p-4 rounded-r-lg mb-4 text-emerald-900" role="status">
+        <p class="font-semibold">Thanks, your message is on its way.</p>
+        <p class="text-sm">We'll reply to the email address you gave us, usually within one working day.</p>
+      </div>
+      <script is:inline>
+        if (new URLSearchParams(window.location.search).get('sent') === '1') {
+          document.addEventListener('DOMContentLoaded', () => {
+            const b = document.getElementById('sent-banner');
+            if (b) { b.classList.remove('hidden'); b.scrollIntoView({ block: 'center' }); }
+          });
+        }
+      </script>
       <form action="https://api.staticforms.xyz/submit" method="POST" class="space-y-5">
         <input type="hidden" name="accessKey" value="sf_9e906eb6c00416b9d3354749" />
         <input type="hidden" name="_site" value="seoswansea.uk" />
